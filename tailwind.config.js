@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  darkMode: "class",
+  content: ["./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
+    fontFamily: {
+      custom: ["MyCustomFont", "sans-serif"],
+    },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };

@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../font/JetBrainsMono-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
