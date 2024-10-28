@@ -663,15 +663,18 @@ html {
 }
 
 .bg-primary-shape {
-  background-color: rgb(30, 0, 255);
+  /* background-color: rgb(30, 0, 255); */
+  background-color: rgb(52, 58, 64);
 }
 
 .bg-teal-shape {
-  background-color: rgb(255, 72, 173);
+  /* background-color: rgb(255, 72, 173); */
+  background-color: rgb(52, 58, 64);
 }
 
 .bg-purple-shape {
-  background-color: rgb(140, 0, 215);
+  /* background-color: rgb(140, 0, 215); */
+  background-color: rgb(52, 58, 64);
 }
 
 .text-posisi {
@@ -683,7 +686,7 @@ html {
 }
 
 .container-sidebar {
-  top: 25% !important;
+  top: 30% !important;
   left: 0 !important;
   border-top-right-radius: 30px !important;
   border-bottom-right-radius: 30px !important;
@@ -703,7 +706,7 @@ html {
   flex-direction: column !important;
   justify-content: center !important;
   align-items: center !important;
-  gap: 20px !important;
+  gap: 30px !important;
   padding: 2rem 1rem !important;
 }
 

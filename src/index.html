@@ -19,47 +19,79 @@
     </script> -->
   </head>
   <body>
-    <!-- <nav
-      class="bg-[#FDC500] relative dark:bg-gray-900"
+    <!-- navbar start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
     >
-      <div
-        class="max-w-screen-2xl relative flex flex-wrap items-center justify-between px-4 py-3"
-      >
-        <h1 class="text-normal text-[28px]">AWS</h1>
-        <div class="cursor-pointer">
-          <i class="fa fa-bars text-[28px] text-bold" aria-hidden="true"></i>
-        </div>
-      </div>
-    </div>
-      <div class="top-[0px] h-[100vh] w-full fixed flex justify-center items-center bg-[#134074] before:bg-black">
-        <div class="flex flex-col w-full h-full">
-          <div class="flex flex-2 justify-between items-center px-100pd pt-1rem">
-            <h1 class="text-normal flex-1 text-[28px] font-jetbrains_italic text-white">AWS</h1>
-            <i class="fa fa-times flex-3 text-[50px] text-white cursor-pointer" aria-hidden="true"></i>
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <div class="px-4 w-1/2">
+            <a
+              href="#home"
+              id="head-logo"
+              class="block py-6 head-logo transition duration-300 ease-in-out"
+              >Abdul</a
+            >
           </div>
-          <ul class="flex flex flex-1 flex-col justify-center items-center text-white">
-            <li>
-              <a href="#" class="block pb-1rem px-3 text-white bg-transparent" aria-current="page"><span class="text-[40px]">Menu</span></a>
-            </li>
-            <li>
-              <a href="#" class="block py-[0.5rem] px-3 text-white bg-transparent text-[20px]">Home</a>
-            </li>
-            <li>
-              <a href="#" class="block py-[0.5rem] px-3 text-white bg-transparent text-[20px]">Service</a>
-            </li>
-            <li>
-              <a href="#" class="block py-[0.5rem] px-3 text-white bg-transparent text-[20px]">About</a>
-            </li>
-            <li>
-              <a href="#" class="block py-[0.5rem] px-3 text-white bg-transparent text-[20px]">Project</a>
-            </li>
-            <li>
-              <a href="#" class="block py-[0.5rem] px-3 text-white bg-transparent text-[20px]">Contact</a>
-            </li>
-          </ul>
+          <div
+            class="flex items-center justify-end px-4 w-1/2 relative container-hamburger"
+          >
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute transition duration-300 ease-in-out"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out hidden"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+
+            <nav id="nav-menu" class="nav-menu hidden">
+              <ul
+                class="flex justify-center menu-items items-center gap-6 flex-col"
+              >
+                <li>
+                  <a
+                    href="#home"
+                    class="text-white font-jost_medium list-menu-hamburger"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#home"
+                    class="text-white font-jost_medium list-menu-hamburger"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#home"
+                    class="text-white font-jost_medium list-menu-hamburger"
+                    >Project</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#home"
+                    class="text-white font-jost_medium list-menu-hamburger"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
-    </nav> -->
+    </header>
+    <!-- navbar end -->
 
     <!-- hero section start -->
     <section id="hero" class="pt-36">
@@ -72,23 +104,15 @@
                   <a href="#" class="block py-2 px-2 text-white menu-active"
                     ><iconify-icon
                       icon="ic:round-home"
-                      style="font-size: 24px"
+                      style="font-size: 26px"
                     ></iconify-icon>
                   </a>
                 </li>
                 <li>
                   <a href="#" class="block py-2 px-2 text-white"
                     ><iconify-icon
-                      icon="mdi:account-service"
-                      style="font-size: 24px"
-                    ></iconify-icon
-                  ></a>
-                </li>
-                <li>
-                  <a href="#" class="block py-2 px-2 text-white"
-                    ><iconify-icon
                       icon="mdi:about"
-                      style="font-size: 24px"
+                      style="font-size: 26px"
                     ></iconify-icon
                   ></a>
                 </li>
@@ -96,7 +120,7 @@
                   <a href="#" class="block py-2 px-2 text-white"
                     ><iconify-icon
                       icon="material-symbols:folder-open"
-                      style="font-size: 24px"
+                      style="font-size: 26px"
                     ></iconify-icon
                   ></a>
                 </li>
@@ -104,7 +128,7 @@
                   <a href="#" class="block py-2 px-2 text-white"
                     ><iconify-icon
                       icon="pepicons-pop:letter"
-                      style="font-size: 24px"
+                      style="font-size: 26px"
                     ></iconify-icon
                   ></a>
                 </li>
@@ -135,12 +159,12 @@
               <div class="flex gap-3">
                 <a
                   href="#"
-                  class="text-base font-semibold text-white bg-dark py-3 px-8 rounded-full shadow-lg border border-dark hover:bg-transparent hover:text-dark hover:border-dark"
+                  class="text-base font-semibold text-white bg-dark py-3 px-8 rounded-full shadow-lg border border-dark hover:bg-transparent hover:text-dark hover:border-dark btn-hero"
                   >Download CV</a
                 >
                 <a
                   href="#"
-                  class="text-base font-semibold text-dark bg-transparent border border-dark py-3 px-8 rounded-full shadow-lg hover:bg-dark hover:text-white"
+                  class="text-base font-semibold text-dark bg-transparent border border-dark py-3 px-8 rounded-full shadow-lg hover:bg-dark hover:text-white btn-hero"
                   >Hire me</a
                 >
               </div>
@@ -156,11 +180,18 @@
                 />
               </div>
               <div class="absolute-shape-1">
-                <div class="bg-shape1 bg-teal-shape opacity-50 bg-blur"></div>
                 <div
+                  id="shape1"
+                  class="bg-shape1 bg-teal-shape opacity-50 bg-blur"
+                ></div>
+                <div
+                  id="shape2"
                   class="bg-shape2 bg-primary-shape opacity-50 bg-blur"
                 ></div>
-                <div class="bg-shape3 bg-purple-shape opacity-50 bg-blur"></div>
+                <div
+                  id="shape3"
+                  class="bg-shape3 bg-purple-shape opacity-50 bg-blur"
+                ></div>
               </div>
             </div>
           </div>
@@ -169,11 +200,22 @@
     </section>
     <!-- hero section end -->
 
+    <!-- About section start -->
+    <section id="about"></section>
+    <!-- About section end -->
+
     <!-- <script src="../node_modules/flowbite/dist/flowbite.min.js"></script> -->
     <script src="../node_modules/@iconify/tailwind/dist/plugin.js"></script>
     <script src="../node_modules/@iconify-json/mdi-light/index.js"></script>
     <script src="../node_modules/@iconify-json/mdi/index.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../src/js/index.js"></script>
     <script>
       var themeToggleDarkIcon = document.getElementById(
         "theme-toggle-dark-icon"
