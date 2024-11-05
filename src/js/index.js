@@ -6,6 +6,7 @@ $(document).ready(function () {
     $(".container-hamburger").toggleClass("relative");
   });
 });
+
 //   navbar fixed
 window.onscroll = function () {
   const header = document.querySelector("header");
