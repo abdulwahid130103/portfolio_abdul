@@ -1,41 +1,52 @@
+function toggleNavbar() {
+  $("#hamburger").toggleClass("hamburger-active");
+  $("#nav-menu").toggleClass("hidden");
+  $("#head-logo").toggleClass("head-logo-active");
+  $(".container-hamburger").toggleClass("relative");
+}
+
+function scrollWindow() {
+  //   navbar fixed
+  const header = document.querySelector("header");
+  let sections = document.querySelectorAll("section");
+  let navLinks = document.querySelectorAll(
+    ".container-sidebar .container-sidebar-sub li a"
+  );
+  window.onscroll = function () {
+    const fixedNav = header.offsetTop;
+
+    if (window.pageYOffset > fixedNav) {
+      header.classList.add("nav-fixed");
+    } else {
+      header.classList.remove("nav-fixed");
+    }
+    sections.forEach((sec) => {
+      let top = window.scrollY;
+      let offset = sec.offsetTop - 150;
+      let height = sec.offsetHeight;
+      let id = sec.getAttribute("id");
+      // console.log("nama: " + id);
+
+      if (top >= offset && top < offset + height) {
+        navLinks.forEach((links) => {
+          links.classList.remove("menu-active");
+          document
+            .querySelector(
+              ".container-sidebar .container-sidebar-sub li a[href*=" + id + "]"
+            )
+            .classList.add("menu-active");
+        });
+      }
+    });
+  };
+}
 $(document).ready(function () {
   $("#hamburger").click(function () {
-    $("#hamburger").toggleClass("hamburger-active");
-    $("#nav-menu").toggleClass("hidden");
-    $("#head-logo").toggleClass("head-logo-active");
-    $(".container-hamburger").toggleClass("relative");
+    toggleNavbar();
   });
-});
-
-//   navbar fixed
-window.onscroll = function () {
-  const header = document.querySelector("header");
-  const fixedNav = header.offsetTop;
-
-  if (window.pageYOffset > fixedNav) {
-    header.classList.add("nav-fixed");
-  } else {
-    header.classList.remove("nav-fixed");
-  }
-  document.addEventListener("DOMContentLoaded", function () {
-    // Bagian yang ingin di-scroll otomatis
-    const sections = ["#hero", "#about", "#project"];
-    const sectionOffsets = sections.map(
-      (id) => document.querySelector(id).offsetTop
-    );
+  $(".nav-link").click(function () {
+    toggleNavbar();
   });
-};
-
-// Inisialisasi LocomotiveScroll
-const locomotiveScroll = new LocomotiveScroll({
-  el:
-    document.querySelector("[data-scroll-container]") ||
-    document.documentElement,
-  smooth: true,
-  smoothMobile: true,
-  lenisOptions: {
-    lerp: 0.1, // tingkat kehalusan (adjust as needed)
-    duration: 2, // durasi scroll
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // efek easing untuk animasi halus
-  },
+  scrollWindow();
+  // scrollSmothMenu();
 });

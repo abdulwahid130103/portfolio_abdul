@@ -105,6 +105,7 @@
 @layer base {
   html {
     font-family: "jetbrains", system-ui, sans-serif;
+    scroll-behavior: smooth;
   }
 
   .absolute-shape-1 {
