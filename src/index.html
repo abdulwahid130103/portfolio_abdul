@@ -18,7 +18,7 @@
       }
     </script> -->
   </head>
-  <body>
+  <body data-scroll-container>
     <!-- loading screen start -->
     <!-- <div class="loading-pages">
       <svg id="svgs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -40,7 +40,7 @@
         <div class="flex items-center justify-between">
           <div class="px-4 w-1/2">
             <a
-              href="#home"
+              href="#hero"
               id="head-logo"
               class="block py-6 head-logo transition duration-300 ease-in-out"
               >Abdul</a
@@ -72,28 +72,28 @@
               >
                 <li>
                   <a
-                    href="#home"
+                    href="#hero"
                     class="text-white font-jost_medium list-menu-hamburger"
                     >Home</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#home"
+                    href="#about"
                     class="text-white font-jost_medium list-menu-hamburger"
                     >About</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#home"
+                    href="#project"
                     class="text-white font-jost_medium list-menu-hamburger"
-                    >Project</a
+                    >Projects</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#home"
+                    href="#contact"
                     class="text-white font-jost_medium list-menu-hamburger"
                     >Contact</a
                   >
@@ -114,7 +114,9 @@
             <div class="fixed container-sidebar">
               <ul class="font-medium container-sidebar-sub">
                 <li>
-                  <a href="#" class="block py-2 px-2 text-white menu-active"
+                  <a
+                    href="#hero"
+                    class="block py-2 px-2 text-white menu-active transition-all duration-300"
                     ><iconify-icon
                       icon="ic:round-home"
                       style="font-size: 26px"
@@ -122,7 +124,9 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="block py-2 px-2 text-white"
+                  <a
+                    href="#about"
+                    class="block py-2 px-2 text-white transition-all duration-300"
                     ><iconify-icon
                       icon="mdi:about"
                       style="font-size: 26px"
@@ -130,7 +134,9 @@
                   ></a>
                 </li>
                 <li>
-                  <a href="#" class="block py-2 px-2 text-white"
+                  <a
+                    href="#project"
+                    class="block py-2 px-2 text-white transition-all duration-300"
                     ><iconify-icon
                       icon="material-symbols:folder-open"
                       style="font-size: 26px"
@@ -138,7 +144,9 @@
                   ></a>
                 </li>
                 <li>
-                  <a href="#" class="block py-2 px-2 text-white"
+                  <a
+                    href="#contact"
+                    class="block py-2 px-2 text-white transition-all duration-300"
                     ><iconify-icon
                       icon="pepicons-pop:letter"
                       style="font-size: 26px"
@@ -172,12 +180,12 @@
               <div class="flex gap-3">
                 <a
                   href="#"
-                  class="text-base font-semibold text-white bg-dark py-3 px-8 rounded-full shadow-lg border border-dark hover:bg-transparent hover:text-dark hover:border-dark btn-hero"
+                  class="text-base font-semibold text-white bg-darkblue py-3 px-8 rounded-full shadow-lg border border-darkblue hover:bg-transparent hover:text-darkblue hover:border-darkblue btn-hero"
                   >Download CV</a
                 >
                 <a
                   href="#"
-                  class="text-base font-semibold text-dark bg-transparent border border-dark py-3 px-8 rounded-full shadow-lg hover:bg-dark hover:text-white btn-hero"
+                  class="text-base font-semibold text-darkblue bg-transparent border border-darkblue py-3 px-8 rounded-full shadow-lg hover:bg-darkblue hover:text-white btn-hero"
                   >Hire me</a
                 >
               </div>
@@ -223,14 +231,14 @@
     <section id="about" class="pt-36">
       <div class="container">
         <div class="w-full flex py-5">
-          <div class="w-full grid grid-flow-row-dense grid-cols-3 grid-rows-3">
+          <div class="w-full grid grid-cols-3 gap-4">
             <div class="">
               <figure
                 class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
               >
                 <a href="#">
                   <img
-                    class="rounded-lg"
+                    class="rounded-lg image-limited-height image-limited-width"
                     src="../src/img/abdul_foto_new.jpg"
                     alt="image description"
                   />
@@ -252,7 +260,7 @@
               </p>
               <a
                 href="#"
-                class="text-base font-jost_medium text-white bg-dark mt-5 py-3 px-8 rounded-full shadow-lg border border-dark hover:bg-transparent hover:text-dark hover:border-dark btn-hero"
+                class="text-base font-jost_medium text-white bg-darkblue mt-5 py-3 px-8 rounded-full shadow-lg border border-darkblue hover:bg-transparent hover:text-darkblue hover:border-darkblue btn-hero"
                 >Learn More</a
               >
             </div>
@@ -261,6 +269,140 @@
       </div>
     </section>
     <!-- About section end -->
+
+    <!-- Project section start -->
+    <section id="project" class="pt-36">
+      <div class="container">
+        <div class="w-full flex py-5">
+          <div class="w-full grid grid-cols-3 gap-4">
+            <div
+              class="col-span-2 pl-[100px] px-5 flex flex-col items-start justify-center"
+            >
+              <div class="flex justify-start items-center py-5">
+                <h1
+                  class="text-dark font-jost_extra_bold text-bold mb-4 text-project"
+                >
+                  My Projects
+                </h1>
+              </div>
+              <p class="font-jost_light text-gray-500 text-[20px]">
+                Here are some projects I worked on during my studies and
+                internship.
+              </p>
+              <a
+                href="#"
+                class="text-base font-jost_medium text-white bg-darkblue mt-5 py-3 px-8 rounded-full shadow-lg border border-darkblue hover:bg-transparent hover:text-darkblue hover:border-darkblue btn-hero"
+                >Learn More</a
+              >
+            </div>
+            <div class="">
+              <figure
+                class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-lg image-limited-height image-limited-width"
+                    src="../src/img/coding.jpg"
+                    alt="image description"
+                  />
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project section end -->
+
+    <!-- Contact section start -->
+    <section id="contact" class="pt-36">
+      <div class="container">
+        <div class="w-full flex py-5">
+          <div class="w-full grid grid-cols-3 gap-4">
+            <div class="">
+              <figure
+                class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              >
+                <a href="#">
+                  <img
+                    class="rounded-lg image-limited-height image-limited-width"
+                    src="../src/img/coding.jpg"
+                    alt="image description"
+                  />
+                </a>
+              </figure>
+            </div>
+            <div
+              class="col-span-2 pl-[100px] px-5 flex flex-col items-start justify-center"
+            >
+              <div class="flex justify-start items-center py-5">
+                <h1
+                  class="text-dark font-jost_extra_bold text-bold mb-4 text-project"
+                >
+                  Contact Me
+                </h1>
+              </div>
+              <p class="font-jost_light text-gray-500 text-[20px]">
+                Feel free to contact me if you have any questions or just want
+                to chat!.
+              </p>
+              <h4 class="font-jost_medium text-dark text-xl pt-4 pb-2">
+                akuwahid33@gmail.com
+              </h4>
+              <ul
+                class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-4 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              >
+                <li>
+                  <a
+                    href="mailto:akuwahid33@gmail.com?subject=Hello&body=Hello%20Abdul,%20how%20are%20you?,"
+                    class="block group bg-darkblue border border-2 border-darkblue hover:bg-transparent focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"
+                    aria-current="page"
+                    ><iconify-icon
+                      icon="ic:baseline-email"
+                      class="text-[32px] text-white group-hover:text-darkblue"
+                    ></iconify-icon
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/abdulwahid130103"
+                    target="_blank"
+                    class="block group bg-darkblue border border-2 border-darkblue hover:bg-transparent focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"
+                    ><iconify-icon
+                      icon="mdi:github"
+                      class="text-[32px] text-white group-hover:text-darkblue"
+                    ></iconify-icon
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/awscahkoding"
+                    target="_blank"
+                    class="block group bg-darkblue border border-2 border-darkblue hover:bg-transparent focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"
+                    ><iconify-icon
+                      icon="mdi:instagram"
+                      class="text-[32px] text-white group-hover:text-darkblue"
+                    ></iconify-icon
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/abdulwahidsafiudin"
+                    target="_blank"
+                    class="block group bg-darkblue border border-2 border-darkblue hover:bg-transparent focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500"
+                    ><iconify-icon
+                      icon="mdi:linkedin"
+                      class="text-[32px] text-white group-hover:text-darkblue"
+                    ></iconify-icon
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section end -->
 
     <!-- <script src="../node_modules/flowbite/dist/flowbite.min.js"></script> -->
     <script src="../node_modules/@iconify/tailwind/dist/plugin.js"></script>
@@ -279,6 +421,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+
     <script src="../src/js/index.js"></script>
     <script>
       var themeToggleDarkIcon = document.getElementById(

@@ -223,7 +223,7 @@
     left: 0 !important;
     border-top-right-radius: 30px !important;
     border-bottom-right-radius: 30px !important;
-    @apply bg-dark text-white;
+    @apply bg-darkblue text-white;
   }
   .menu-active {
     border-bottom: 4px solid #fff;
@@ -333,7 +333,8 @@
     font-weight: 900;
     text-shadow: 1px 1px 0 black;
   }
-  .text-about {
+  .text-about,
+  .text-project {
     font-size: 100px !important;
     line-height: 1;
     padding: 10px 0;
@@ -342,29 +343,38 @@
     position: relative;
     background-color: transparent;
   }
-  .text-about::before {
+  .text-about::before,
+  .text-project::before {
     content: "";
     position: absolute;
     width: 20%; /* Adjust this value as needed */
     height: 5px;
-    bottom: 0px;
+    bottom: -10px;
     left: 0; /* Centering */
     /* transform: translateX(-50%); */
     z-index: 1;
     background-color: rgb(107 114 128);
     border-radius: 20%;
   }
-  .text-about::after {
+  .text-about::after,
+  .text-project::after {
     content: "";
     position: absolute;
     width: 20%; /* Adjust this value as needed */
     height: 5px;
-    bottom: -15px;
+    bottom: -25px;
     left: 10%; /* Centering */
     /* transform: translateX(-50%); */
     z-index: 1;
     background-color: rgb(107 114 128);
     border-radius: 20%;
+  }
+  .image-limited-height {
+    max-height: 500px;
+  }
+  .image-limited-width {
+    max-width: 350px;
+    width: 350px;
   }
 }
 
