@@ -303,7 +303,7 @@
     height: 100%;
     z-index: -1;
     position: absolute !important;
-    background-color: #fff;
+    background-color: #e6e6e6;
     opacity: 0.7 !important;
     backdrop-filter: blur(5px) !important;
   }
@@ -371,7 +371,7 @@
     border-radius: 20%;
   }
   .image-limited-height {
-    max-height: 500px;
+    max-height: 465px;
   }
   .image-limited-width {
     max-width: 350px;
@@ -491,4 +491,171 @@
       top: 200px;
     }
   }
+
+  /* header start */
+
+  header > .container > div > div > a {
+    font-size: 22px !important;
+  }
+  .hamburger-line {
+    @apply w-[35px] h-[3.5px];
+  }
+  #nav-menu > ul > li > a {
+    font-size: 20px !important;
+  }
+  /* header end */
+
+  /* hero start */
+
+  #hero {
+    padding-top: 75px !important;
+  }
+
+  .sub-container-hero {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .sub-container-hero > .contain-hero-one {
+    display: flex !important;
+    order: 2 !important;
+  }
+  .sub-container-hero > .contain-hero-two {
+    display: flex !important;
+    order: 1 !important;
+  }
+  .sub-container-hero > .contain-hero-two > div > div > figure > a > img {
+    height: 200px !important;
+    width: 200px !important;
+    border-radius: 100% !important;
+  }
+  .contain-hero-one > .contain-text-hero > * {
+    text-align: center !important;
+  }
+  .contain-hero-one > .contain-text-hero > h2 {
+    font-size: 18px !important;
+    /* border: 1px solid red !important; */
+    padding: 0.8rem 0 !important;
+  }
+  .contain-hero-one > .contain-text-hero > h1 {
+    font-size: 32px !important;
+  }
+  .contain-hero-one > .contain-text-hero > h1 > span {
+    display: inline !important;
+  }
+  .contain-hero-one > .contain-text-hero > p {
+    font-size: 14px !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .contain-hero-one > .contain-text-hero > .containts-button-hero {
+    justify-content: center !important;
+  }
+  .contain-hero-one > .contain-text-hero > .containts-button-hero > a {
+    font-size: 12px !important;
+    padding: 0.4rem 1.5rem !important;
+  }
+
+  /* hero end */
+
+  /* about and project start */
+
+  #about > .container > div > div,
+  #project > .container > div > div,
+  #contact > .container > div > div {
+    height: 35rem !important;
+    display: flex !important;
+    align-items: end !important;
+    justify-content: end !important;
+  }
+  #about > .container > div > div > .containts-about-image,
+  #project > .container > div > div > .containts-project-image,
+  #contact > .container > div > div > .containts-contact-image {
+    width: 100% !important;
+    position: absolute !important;
+    top: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  #about > .container > div > div > .containts-about-text > div > h1,
+  #project > .container > div > div > .containts-project-text > div > h1,
+  #contact > .container > div > div > .containts-contact-text > div > h1 {
+    font-size: 30px !important;
+    position: relative !important;
+    padding: 0.4rem 1.5rem !important;
+    background-color: transparent !important;
+    color: #e6e6e6 !important;
+    margin: 0 !important;
+    z-index: 1 !important;
+    margin-bottom: 1.5rem !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+  }
+  #about > .container > div > div > .containts-about-text > a,
+  #project > .container > div > div > .containts-project-text > a,
+  #contact > .container > div > div > .containts-contact-text > a {
+    width: 28% !important;
+    padding: 0.4rem 1.5rem !important;
+    font-size: 12px !important;
+    z-index: 1 !important;
+    margin: 0 !important;
+  }
+
+  #about > .container > div > div > .containts-about-text > p,
+  #project > .container > div > div > .containts-project-text > p,
+  #contact > .container > div > div > .containts-contact-text > p {
+    font-size: 14px !important;
+    z-index: 1 !important;
+    margin: 0 0 !important;
+    margin: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+  #about > .container > div > div > .containts-about-text,
+  #project > .container > div > div > .containts-project-text,
+  #contact > .container > div > div > .containts-contact-text {
+    width: 100% !important;
+  }
+  /* about and project end */
+
+  /* contact start */
+  #contact > .container > div > div {
+    height: 40rem !important;
+  }
+  #contact > .container > div > div > .containts-contact-text > ul {
+    margin: 0 !important;
+    padding-left: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: transparent !important;
+    border: none !important;
+  }
+  #contact > .container > div > div > .containts-contact-text > ul > li {
+    margin-left: 0.5rem !important;
+  }
+  #contact
+    > .container
+    > div
+    > div
+    > .containts-contact-text
+    > ul
+    > li:first-child {
+    margin-left: 0 !important;
+  }
+  #contact
+    > .container
+    > div
+    > div
+    > .containts-contact-text
+    > ul
+    > li
+    > a
+    > iconify-icon {
+    font-size: 26px !important;
+  }
+  #contact > .container > div > div > .containts-contact-text > h4 {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 16px !important;
+  }
+  /* contact end */
 }
