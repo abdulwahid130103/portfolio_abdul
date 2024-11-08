@@ -355,7 +355,7 @@
     /* transform: translateX(-50%); */
     z-index: 1;
     background-color: rgb(107 114 128);
-    border-radius: 20%;
+    border-radius: 10px;
   }
   .text-about::after,
   .text-project::after {
@@ -368,7 +368,7 @@
     /* transform: translateX(-50%); */
     z-index: 1;
     background-color: rgb(107 114 128);
-    border-radius: 20%;
+    border-radius: 10px;
   }
   .image-limited-height {
     max-height: 465px;
@@ -377,6 +377,149 @@
     max-width: 350px;
     width: 350px;
   }
+  /* about full css start */
+  /* #about-full > header {
+    position: fixed !important;
+    z-index: 9999 !important;
+    background-color: transparent !important;
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1) !important;
+  }
+  #about-full > header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute !important;
+    background-color: #e6e6e6;
+    opacity: 0.7 !important;
+    backdrop-filter: blur(5px) !important;
+  } */
+  .containts-about-image-full {
+    height: 100vh !important;
+    max-height: 100vh !important;
+  }
+  .containts-about-image-full > figure {
+    height: 100vh !important;
+    max-height: 100vh !important;
+  }
+  .containts-about-image-full > figure > a > img {
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  #whos > div > div > .line-one-about-full,
+  #whos > div > div > .line-two-about-full {
+    width: 8% !important;
+    height: 4px !important;
+    z-index: 1 !important;
+    margin-bottom: 0.8rem !important;
+    background-color: rgb(107 114 128) !important;
+    border-radius: 10px !important;
+  }
+  #whos > div > div > .line-two-about-full {
+    margin-left: 4% !important;
+  }
+  #whos > div > div > .text-whos {
+    font-size: 30px !important;
+    line-height: 1 !important;
+    padding: 10px 0 !important;
+    font-weight: 900 !important;
+    text-shadow: 0.5px 0.5px 0 black !important;
+    position: relative !important;
+    background-color: transparent !important;
+  }
+  .container-image-about-full-one,
+  .container-image-about-full-two,
+  .container-image-about-full-three {
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1) !important;
+    overflow: hidden !important;
+  }
+  .image-about-full-one,
+  .image-about-full-two,
+  .image-about-full-three {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transition: transform 400ms ease-out !important;
+  }
+  .image-about-full-one:hover,
+  .image-about-full-two:hover,
+  .image-about-full-three:hover {
+    cursor: url("../img/focus.png") 16 16, auto !important;
+    transform: scale(1.15) !important;
+  }
+  /* about full css end */
+
+  /* image popup start */
+  .container-image-popup {
+    top: 0 !important;
+    left: 0 !important;
+    position: fixed !important;
+    z-index: 9999 !important;
+    width: 100% !important;
+    height: 100vh !important;
+    background-color: transparent !important;
+  }
+  .container-image-popup::before {
+    content: "" !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    left: 0 !important;
+    z-index: -1 !important;
+    background-color: rgba(25, 25, 26, 0.9) !important; /* Ubah ke rgba */
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+  }
+  /* body {
+    overflow-y: hidden;
+  } */
+  .delete-icon-image-popup {
+    margin-right: 1rem !important;
+  }
+  .delete-icon-image-popup,
+  .focus-icon-image-popup {
+    font-size: 30px !important;
+    color: #e6e6e6 !important;
+    opacity: 0.6 !important;
+    text-shadow: 0.5px 0.5px 0 #e6e6e6 !important;
+    font-weight: bolder !important;
+    transition: transform 0.8s ease-in-out, color 0.3s ease;
+  }
+  .delete-icon-image-popup:hover,
+  .focus-icon-image-popup:hover {
+    color: #fff !important;
+    opacity: 1 !important;
+    cursor: pointer !important;
+    text-shadow: 0.5px 0.5px 0 #fff !important;
+  }
+  .body-image-popup {
+    height: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    padding: 2rem 2rem !important;
+    border-radius: 20px !important;
+    box-shadow: 0 1px 3px 0 rgba(237, 235, 235, 0.1) !important;
+  }
+  .img-popup {
+    width: 100% !important;
+    object-fit: contain !important;
+    height: 100% !important;
+    transition: transform 0.8s ease-in-out;
+    border-radius: 10px !important;
+  }
+  .container-image-popup > div > .body-image-popup > img:hover {
+    cursor: pointer !important;
+    transition: transform 0.8s ease-in-out;
+  }
+  .zoomed {
+    position: absolute;
+    transform-origin: center;
+    transition: transform 0.8s ease-in-out;
+  }
+
+  /* image popup end */
 }
 
 @media (max-width: 768px) {

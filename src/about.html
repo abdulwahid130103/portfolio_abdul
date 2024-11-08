@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/output.css" rel="stylesheet" />
+    <!-- <script src="../node_modules/flowbite/dist/flowbite.min.css"></script> -->
+
+    <!-- <script>
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script> -->
+  </head>
+  <body class="bg-abu" id="about-full">
+    <!-- navbar start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <div class="px-4 w-1/2">
+            <h4
+              id="head-logo"
+              class="block py-6 head-logo transition duration-300 ease-in-out"
+            >
+              Abdul
+            </h4>
+          </div>
+          <div
+            class="flex items-center justify-end px-4 w-1/2 relative container-hamburger"
+          >
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute transition duration-300 ease-in-out"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out hidden"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+
+            <nav id="nav-menu" class="nav-menu hidden">
+              <ul
+                class="flex justify-center menu-items items-center gap-6 flex-col"
+              >
+                <li>
+                  <a
+                    href="#hero"
+                    class="text-white font-jost_medium list-menu-hamburger nav-link"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="text-white font-jost_medium list-menu-hamburger nav-link"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#project"
+                    class="text-white font-jost_medium list-menu-hamburger nav-link"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="text-white font-jost_medium list-menu-hamburger nav-link"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- navbar end -->
+
+    <!-- About section start -->
+    <section id="about" class="">
+      <div class="containers">
+        <div class="w-full flex">
+          <div class="w-full relative lg:flex lg:flex-row gap-4">
+            <div
+              class="containts-about-text-full pl-[100px] lg:w-1/2 lg:flex lg:flex-col lg:items-start lg:justify-center"
+            >
+              <div class="flex justify-start items-center py-5">
+                <h1
+                  class="text-dark font-jost_extra_bold text-bold mb-4 text-about"
+                >
+                  About Me
+                </h1>
+              </div>
+              <p class="font-jost_light text-gray-500 text-[20px]">
+                A brief introduction about me and my interest.
+              </p>
+              <a
+                href="#"
+                class="text-base font-jost_medium text-white bg-darkblue mt-5 py-3 px-8 rounded-full shadow-lg border border-darkblue hover:bg-transparent hover:text-darkblue hover:border-darkblue btn-hero"
+                >Scroll Down</a
+              >
+            </div>
+            <div class="lg:w-1/2 containts-about-image-full">
+              <figure
+                class="relative w-full transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              >
+                <a href="javascript:void(0)">
+                  <!-- vercel -->
+                  <img
+                    class="w-full"
+                    src="img/abdul_foto_new.jpg"
+                    alt="image description"
+                  />
+                  <!-- <img
+                  class="rounded-lg image-limited-height image-limited-width"
+                  src="../src/img/abdul_foto_new.jpg"
+                  alt="image description"
+                /> -->
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- who is am start -->
+    <section id="whos" class="mt-16">
+      <div class="container">
+        <div class="w-full flex flex-col">
+          <div class="line-one-about-full"></div>
+          <div class="line-two-about-full"></div>
+          <h1 class="text-dark font-jost_extra_bold text-bold mb-4 text-whos">
+            Who Am I?
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- who is am end -->
+
+    <!-- image popup start -->
+    <div class="container-image-popup hidden">
+      <div
+        class="flex flex-col h-[100%]"
+        style="box-sizing: border-box !important"
+      >
+        <div
+          class="w-full flex-1 z-[999] header-image-popup flex justify-end gap-5 px-5 py-5"
+        >
+          <iconify-icon
+            icon="ri:focus-3-line"
+            class="focus-icon-image-popup"
+          ></iconify-icon>
+          <iconify-icon
+            icon="iwwa:delete"
+            class="delete-icon-image-popup"
+          ></iconify-icon>
+        </div>
+        <div class="w-full body-image-popup">
+          <img
+            class="w-full img-popup"
+            src="img/abdul_foto_new.jpg"
+            alt="image description"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- image popup end -->
+    <!-- section about me start -->
+    <section id="aboutme" class="mt-12">
+      <div class="container">
+        <div class="w-full">
+          <div class="flex">
+            <div class="w-1/2 grid grid-cols-3 grid-rows-6 gap-3">
+              <div class="col-span-2 row-span-6 container-image-about-full-one">
+                <figure
+                  class="relative w-full transition-all duration-300 filter grayscale hover:grayscale-0"
+                >
+                  <a href="javascript:void(0)">
+                    <!-- vercel -->
+                    <img
+                      class="w-full image-about-full-one"
+                      src="img/person.jpg"
+                      alt="image description"
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div
+                class="row-span-3 col-start-3 container-image-about-full-two"
+              >
+                <figure
+                  class="relative w-full transition-all duration-300 filter grayscale hover:grayscale-0"
+                >
+                  <a href="javascript:void(0)">
+                    <!-- vercel -->
+                    <img
+                      class="w-full image-about-full-two"
+                      src="img/person.jpg"
+                      alt="image description"
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div
+                class="row-span-3 col-start-3 row-start-4 container-image-about-full-three"
+              >
+                <figure
+                  class="relative w-full transition-all duration-300 filter grayscale hover:grayscale-0"
+                >
+                  <a href="javascript:void(0)">
+                    <!-- vercel -->
+                    <img
+                      class="w-full image-about-full-three"
+                      src="img/person.jpg"
+                      alt="image description"
+                    />
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="w-1/2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section about me end -->
+
+    <!-- <script src="../node_modules/flowbite/dist/flowbite.min.js"></script> -->
+    <script src="../node_modules/@iconify/tailwind/dist/plugin.js"></script>
+    <script src="../node_modules/@iconify-json/mdi-light/index.js"></script>
+    <script src="../node_modules/@iconify-json/mdi/index.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <!-- vercel -->
+    <script src="js/index.js"></script>
+    <!-- <script src="../src/js/index.js"></script> -->
+    <script>
+      var themeToggleDarkIcon = document.getElementById(
+        "theme-toggle-dark-icon"
+      );
+      var themeToggleLightIcon = document.getElementById(
+        "theme-toggle-light-icon"
+      );
+
+      // Change the icons inside the button based on previous settings
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        themeToggleLightIcon.classList.remove("hidden");
+      } else {
+        themeToggleDarkIcon.classList.remove("hidden");
+      }
+
+      var themeToggleBtn = document.getElementById("theme-toggle");
+
+      themeToggleBtn.addEventListener("click", function () {
+        // toggle icons inside button
+        themeToggleDarkIcon.classList.toggle("hidden");
+        themeToggleLightIcon.classList.toggle("hidden");
+
+        // if set via local storage previously
+        if (localStorage.getItem("color-theme")) {
+          if (localStorage.getItem("color-theme") === "light") {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("color-theme", "dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("color-theme", "light");
+          }
+
+          // if NOT set via local storage previously
+        } else {
+          if (document.documentElement.classList.contains("dark")) {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("color-theme", "light");
+          } else {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("color-theme", "dark");
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
