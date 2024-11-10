@@ -642,7 +642,7 @@
     padding: 1rem 4rem !important;
   }
   .container-expertise > .body-expertise > div > iconify-icon,
-  .container-tools > .body-tools > div > iconify-icon{
+  .container-tools > .body-tools > div > iconify-icon {
     font-size: 40px !important;
     transition: transform 0.8s ease-in-out;
   }
@@ -668,6 +668,233 @@
     text-shadow: 0.05px 0.05px 0 rgb(107 114 128) !important;
   }
   /* Expired & Tools End */
+
+  /* Experience Start */
+  #experience > div > div > .line-one-experience-full,
+  #experience > div > div > .line-two-experience-full {
+    width: 8% !important;
+    height: 4px !important;
+    z-index: 1 !important;
+    margin-bottom: 0.8rem !important;
+    background-color: rgb(107 114 128) !important;
+    border-radius: 10px !important;
+  }
+  #experience > div > div > .line-two-experience-full {
+    margin-left: 4% !important;
+  }
+  #experience > div > div > .text-experience {
+    font-size: 30px !important;
+    line-height: 1 !important;
+    padding: 10px 0 !important;
+    font-weight: 900 !important;
+    text-shadow: 0.5px 0.5px 0 black !important;
+    position: relative !important;
+    background-color: transparent !important;
+  }
+  #experience > div > .body-experience > ol {
+    border: none !important;
+    border-left: 4px solid black !important;
+  }
+  #experience > div > .body-experience > ol > li > div {
+    transform: translateX(-28px) !important;
+  }
+  #experience > div > .body-experience > ol > li > time {
+    font-size: 18px !important;
+  }
+  #experience > div > .body-experience > ol > li > h3 {
+    font-size: 30px !important;
+    padding: 0 !important;
+    padding-top: 2rem !important;
+  }
+  #experience > div > .body-experience > ol > li > h5 {
+    font-size: 16px !important;
+    padding: 0 !important;
+    padding-top: 0.2rem !important;
+  }
+  #experience > div > .body-experience > ol > li > p {
+    font-size: 18px !important;
+    padding: 0 !important;
+    padding-top: 1rem !important;
+  }
+  #experience > div > .body-experience > ol > li > .experience-tech > div {
+    border-radius: 50% !important;
+    padding: 0.5rem 0.5rem !important;
+    box-shadow: inset -2px -2px 0 0 rgba(0, 0, 0, 0.1),
+      inset 2px 2px 0 0 rgba(0, 0, 0, 0.1) !important;
+  }
+  #experience
+    > div
+    > .body-experience
+    > ol
+    > li
+    > .experience-tech
+    > div:hover {
+    color: #fff !important;
+    background-color: #374151 !important;
+    cursor: pointer !important;
+  }
+  #experience
+    > div
+    > .body-experience
+    > ol
+    > li
+    > .experience-tech
+    > div
+    > iconify-icon {
+    font-size: 24px !important;
+    transition: transform 0.8s ease-in-out;
+  }
+  /* Experience End */
+
+  /* profile start */
+  #profile > div > div > .header-profile {
+    padding: 0 !important;
+    padding: 5rem 0 2rem 0 !important;
+  }
+  #profile > div > div > .header-profile > h1 {
+    font-size: 30px !important;
+  }
+  #profile > div > div > .header-profile > h6 {
+    font-weight: 800 !important;
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+    text-shadow: 0.05px 0.05px 0 rgb(107 114 128) !important;
+  }
+  #profile > div > div > .body-profile > div > .container-image > img {
+    max-height: 400px !important;
+    object-fit: cover !important;
+    /* max-width: 60% !important; */
+    border-radius: 10px !important;
+  }
+  #profile
+    > div
+    > div
+    > .body-profile
+    > div
+    > .container-caption-education
+    > .caption-education
+    > h3 {
+    font-size: 22px !important;
+  }
+  #profile
+    > div
+    > div
+    > .body-profile
+    > div
+    > .container-caption-education
+    > .caption-education
+    > h1 {
+    font-size: 30px !important;
+  }
+  #profile
+    > div
+    > div
+    > .body-profile
+    > div
+    > .container-caption-education
+    > .caption-education
+    > p {
+    font-size: 20px !important;
+  }
+  #profile
+    > div
+    > div
+    > .body-profile
+    > div
+    > .container-caption-education
+    > .caption-education {
+    padding: 1rem 2rem !important;
+  }
+  #profile
+    > div
+    > div
+    > .body-profile
+    > div
+    > .container-caption-education
+    > .caption-education-two {
+    padding: 0 2rem 1rem 2rem !important;
+  }
+  #profile
+    > div
+    > div
+    > .body-profile
+    > div
+    > .container-caption-education
+    > .caption-education-two
+    > p {
+    font-size: 18px !important;
+    text-align: justify !important;
+    padding: 0 0 0.1rem 0 !important;
+  }
+  #profile
+    > div
+    > div
+    > .body-profile
+    > div
+    > .container-caption-education
+    > .caption-education-three {
+    padding: 0 2rem 1rem 2rem !important;
+  }
+  #profile
+    > div
+    > div
+    > .body-profile
+    > div
+    > .container-caption-education
+    > .caption-education-three
+    > h4 {
+    background-color: #374151 !important;
+    display: inline-block !important;
+    padding: 0.5rem 1.5rem 0.5rem 1rem !important;
+    color: #fff !important;
+    border-radius: 20px !important;
+    border: 2px solid #374151 !important;
+    transition: transform 0.8s ease-in-out;
+  }
+  #profile
+    > div
+    > div
+    > .body-profile
+    > div
+    > .container-caption-education
+    > .caption-education-three
+    > h4
+    > iconify-icon {
+    margin-right: 0.3rem !important;
+    transform: translateY(3px) !important;
+    font-size: 20px !important;
+  }
+  #profile
+    > div
+    > div
+    > .body-profile
+    > div
+    > .container-caption-education
+    > .caption-education-three
+    > h4:hover {
+    background-color: transparent !important;
+    color: #343a40 !important;
+    cursor: pointer !important;
+    border: 2px solid #374151 !important;
+    transition: transform 0.8s ease-in-out;
+  }
+  /* profile end */
+
+  /* GetInTouch Start */
+  #getintouch > div > div > div {
+    padding: 5rem 0 !important;
+    border: 2px solid red !important;
+  }
+  #getintouch > div > div > div > h5 {
+    font-size: 24px !important;
+  }
+  #getintouch > div > div > div > a > h1 {
+    font-size: 30px !important;
+  }
+  #getintouch > div > div > div > a > conify-icon {
+    font-size: 30px !important;
+  }
+  /* GetInTouch End */
 }
 
 @media (max-width: 768px) {
