@@ -1,3 +1,4 @@
+import { Tooltip } from "flowbite";
 function toggleNavbar() {
   $("#hamburger").toggleClass("hamburger-active");
   $("#nav-menu").toggleClass("hidden");
@@ -60,6 +61,8 @@ function zoomInImagePopupIcon() {
   });
 }
 
+function ImageCollage() {}
+
 function imageAboutmeClick() {
   const aboutMeSection = document.getElementById("aboutme");
   const imagePopupContainer = document.querySelector(".container-image-popup");
@@ -110,6 +113,30 @@ function zoomInImagePopup() {
     }
   });
 }
+
+function showToltip() {
+  const $targetEl = document.getElementById("tooltipContent");
+  const $triggerEl = document.getElementById("tooltipButton");
+  const options = {
+    placement: "bottom",
+    triggerType: "hover",
+    onHide: () => {
+      console.log("tooltip is shown");
+    },
+    onShow: () => {
+      console.log("tooltip is hidden");
+    },
+    onToggle: () => {
+      console.log("tooltip is toggled");
+    },
+  };
+  const instanceOptions = {
+    id: "tooltipContent",
+    override: true,
+  };
+  const tooltip = new Tooltip($targetEl, $triggerEl, options, instanceOptions);
+  tooltip.show();
+}
 $(document).ready(function () {
   $("#hamburger").click(function () {
     toggleNavbar();
@@ -121,4 +148,5 @@ $(document).ready(function () {
   zoomInImagePopup();
   zoomInImagePopupIcon();
   imageAboutmeClick();
+  ImageCollage();
 });

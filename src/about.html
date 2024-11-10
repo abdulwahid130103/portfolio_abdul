@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/output.css" rel="stylesheet" />
-    <!-- <script src="../node_modules/flowbite/dist/flowbite.min.css"></script> -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.css"></script>
 
     <!-- <script>
       if (
@@ -184,67 +184,503 @@
       </div>
     </div>
     <!-- image popup end -->
+
     <!-- section about me start -->
     <section id="aboutme" class="mt-12">
       <div class="container">
         <div class="w-full">
           <div class="flex">
-            <div class="w-1/2 grid grid-cols-3 grid-rows-6 gap-3">
-              <div class="col-span-2 row-span-6 container-image-about-full-one">
-                <figure
-                  class="relative w-full transition-all duration-300 filter grayscale hover:grayscale-0"
-                >
-                  <a href="javascript:void(0)">
-                    <!-- vercel -->
-                    <img
-                      class="w-full image-about-full-one"
-                      src="img/person.jpg"
-                      alt="image description"
-                    />
-                  </a>
-                </figure>
-              </div>
-              <div
-                class="row-span-3 col-start-3 container-image-about-full-two"
+            <div class="w-1/2 container-image-about-full-effect">
+              <swiper-container
+                class="mySwiper"
+                effect="cards"
+                grab-cursor="true"
               >
-                <figure
-                  class="relative w-full transition-all duration-300 filter grayscale hover:grayscale-0"
+                <swiper-slide>
+                  <img
+                    class="transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+                    src="img/abdul_foto_new.jpg"
+                    alt="image1"
+                  />
+                </swiper-slide>
+                <swiper-slide
+                  ><img
+                    class="transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+                    src="img/abdul_foto_new.jpg"
+                    alt="image2"
+                /></swiper-slide>
+                <swiper-slide
+                  ><img
+                    class="transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+                    src="img/abdul_foto_new.jpg"
+                    alt="image3"
+                /></swiper-slide>
+              </swiper-container>
+            </div>
+            <div
+              class="w-1/2 flex flex-col items-center gap-2 container-about-full-text"
+            >
+              <h1 class="w-full font-jost_bold text-dark">
+                Abdul Wahid Safiudin
+              </h1>
+              <p class="w-full font-jost_light text-gray-500 text-justify">
+                Hello, I'm
+                <span class="font-jost_medium text-dark"
+                  >Abdul Wahid Safiudin</span
+                >, a
+                <span class="font-jost_medium text-dark">tech enthusiast</span>
+                and
+                <span class="font-jost_medium text-dark"
+                  >aspiring Web Developer</span
+                >. Originally from Mojokerto, East Java, Indonesia, I recently
+                graduated from
+                <span class="font-jost_medium text-dark"
+                  >Politeknik Negeri Malang</span
                 >
-                  <a href="javascript:void(0)">
-                    <!-- vercel -->
-                    <img
-                      class="w-full image-about-full-two"
-                      src="img/person.jpg"
-                      alt="image description"
-                    />
-                  </a>
-                </figure>
-              </div>
-              <div
-                class="row-span-3 col-start-3 row-start-4 container-image-about-full-three"
-              >
-                <figure
-                  class="relative w-full transition-all duration-300 filter grayscale hover:grayscale-0"
+                , where I majored in
+                <span class="font-jost_medium text-dark"
+                  >Information Management</span
                 >
-                  <a href="javascript:void(0)">
-                    <!-- vercel -->
-                    <img
-                      class="w-full image-about-full-three"
-                      src="img/person.jpg"
-                      alt="image description"
-                    />
-                  </a>
-                </figure>
+                . My passion for technology and coding knows no bounds. Beyond
+                coding, I have a deep interest in web development, design, and
+                Android app development. In today's fast-paced digital
+                landscape, I believe that being a
+                <span class="font-jost_medium text-dark">lifelong learner</span>
+                is not just an option but a necessity. Let’s connect and explore
+                the ever-evolving world of technology together!
+              </p>
+              <div class="w-full flex containers-spotify">
+                <iconify-icon
+                  class="transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+                  icon="streamline:spotify-solid"
+                ></iconify-icon>
+                <h4 class="font-jost_bold text-dark">Currently Offline</h4>
               </div>
             </div>
-            <div class="w-1/2"></div>
           </div>
         </div>
       </div>
     </section>
     <!-- section about me end -->
 
-    <!-- <script src="../node_modules/flowbite/dist/flowbite.min.js"></script> -->
+    <!-- section skills start -->
+    <section id="skills" class="mt-12">
+      <div class="container">
+        <div class="w-full">
+          <div class="flex flex-col justify-center items-center w-full">
+            <div
+              class="header w-full flex flex-col justify-center items-center"
+            >
+              <h1 class="font-jost_bold text-dark">Skills And Expertise</h1>
+              <h6 class="font-jost_light text-gray-500">
+                Explore some skills I'm proficient in to deliver high-quality
+                solutions.
+              </h6>
+            </div>
+            <div class="body w-full">
+              <div class="grid grid-cols-4 gap-4 container-skills">
+                <div class="flex flex-col justify-center items-center gap-2">
+                  <iconify-icon icon="proicons:webpack"></iconify-icon>
+                  <h4 class="font-jost_medium text-dark">Web Development</h4>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-2">
+                  <iconify-icon icon="material-symbols:webhook"></iconify-icon>
+                  <h4 class="font-jost_medium text-dark">Rest Api</h4>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-2">
+                  <iconify-icon
+                    icon="basil:adobe-experince-design-solid"
+                  ></iconify-icon>
+                  <h4 class="font-jost_medium text-dark">UI/UX Design</h4>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-2">
+                  <iconify-icon icon="lineicons:android-old"></iconify-icon>
+                  <h4 class="font-jost_medium text-dark">
+                    Android Development
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section skills end -->
+
+    <!-- Expired Start -->
+    <section id="expertise" class="mt-12">
+      <div class="container">
+        <div class="w-full">
+          <div class="flex flex-col container-expertise">
+            <div
+              class="flex flex-col justify-center items-center header-expertise"
+            >
+              <h6 class="font-jost_light text-gray-500">
+                Language & Framework
+              </h6>
+            </div>
+            <div class="grid grid-cols-6 gap-4 body-expertise">
+              <div
+                class="flex flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-html"
+              >
+                <iconify-icon icon="flowbite:html-solid"></iconify-icon>
+                <div
+                  id="tooltip-html"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  HTML
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex relative flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-css"
+              >
+                <iconify-icon icon="flowbite:css-solid"></iconify-icon>
+                <div
+                  id="tooltip-css"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  CSS
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex relative flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-js"
+              >
+                <iconify-icon icon="ri:javascript-fill"></iconify-icon>
+                <div
+                  id="tooltip-js"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Javascript
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-php"
+              >
+                <iconify-icon icon="akar-icons:php-fill"></iconify-icon>
+                <div
+                  id="tooltip-php"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  PHP
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex relative flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-python"
+              >
+                <iconify-icon icon="akar-icons:python-fill"></iconify-icon>
+                <div
+                  id="tooltip-python"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Python
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-java"
+              >
+                <iconify-icon icon="cib:java"></iconify-icon>
+                <div
+                  id="tooltip-java"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Java
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex relative flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-kotlin"
+              >
+                <iconify-icon icon="devicon-plain:kotlin"></iconify-icon>
+                <div
+                  id="tooltip-kotlin"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Kotlin
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-xml"
+              >
+                <iconify-icon icon="mdi:xml"></iconify-icon>
+                <div
+                  id="tooltip-xml"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  XML
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex relative flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-dart"
+              >
+                <iconify-icon icon="simple-icons:dart"></iconify-icon>
+                <div
+                  id="tooltip-dart"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Dart
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-bootstrap"
+              >
+                <iconify-icon icon="ri:bootstrap-fill"></iconify-icon>
+                <div
+                  id="tooltip-bootstrap"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Bootstrap
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex relative flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-tailwind"
+              >
+                <iconify-icon icon="teenyicons:tailwind-solid"></iconify-icon>
+                <div
+                  id="tooltip-tailwind"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Tailwind
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-jquery"
+              >
+                <iconify-icon
+                  icon="devicon-plain:jquery-wordmark"
+                ></iconify-icon>
+                <div
+                  id="tooltip-jquery"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Jquery
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex relative flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-laravel"
+              >
+                <iconify-icon icon="mdi:laravel"></iconify-icon>
+                <div
+                  id="tooltip-laravel"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Laravel
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex relative flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-flutter"
+              >
+                <iconify-icon icon="material-symbols:flutter"></iconify-icon>
+                <div
+                  id="tooltip-flutter"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Flutter
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex relative flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-firebase"
+              >
+                <iconify-icon icon="mdi:firebase"></iconify-icon>
+                <div
+                  id="tooltip-firebase"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Firebase
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex relative flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-mysql"
+              >
+                <iconify-icon icon="simple-icons:mysql"></iconify-icon>
+                <div
+                  id="tooltip-mysql"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Mysql
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex relative flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-postgresql"
+              >
+                <iconify-icon icon="akar-icons:postgresql-fill"></iconify-icon>
+                <div
+                  id="tooltip-postgresql"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Postgresql
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex relative flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-odoo"
+              >
+                <iconify-icon icon="simple-icons:odoo"></iconify-icon>
+                <div
+                  id="tooltip-odoo"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Odoo
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Expired End -->
+
+    <!-- Tools Start -->
+    <section id="tools" class="mt-12">
+      <div class="container">
+        <div class="w-full">
+          <div class="flex flex-col container-tools">
+            <div class="flex flex-col justify-center items-center header-tools">
+              <h6 class="font-jost_light text-gray-500">Tools</h6>
+            </div>
+            <div class="grid grid-cols-6 gap-4 body-tools">
+              <div
+                class="flex flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-vscode"
+              >
+                <iconify-icon icon="codicon:vscode"></iconify-icon>
+                <div
+                  id="tooltip-vscode"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Visual Studio Code
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-androidstudio"
+              >
+                <iconify-icon icon="devicon-plain:androidstudio"></iconify-icon>
+                <div
+                  id="tooltip-androidstudio"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Android Studio
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-git"
+              >
+                <iconify-icon icon="bi:git"></iconify-icon>
+                <div
+                  id="tooltip-git"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Git
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-github"
+              >
+                <iconify-icon icon="mdi:github"></iconify-icon>
+                <div
+                  id="tooltip-github"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Github
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-gitlab"
+              >
+                <iconify-icon icon="ri:gitlab-fill"></iconify-icon>
+                <div
+                  id="tooltip-gitlab"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Gitlab
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center gap-1"
+                data-tooltip-target="tooltip-microsoft"
+              >
+                <iconify-icon icon="ri:microsoft-fill"></iconify-icon>
+                <div
+                  id="tooltip-microsoft"
+                  role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Microsoft Office
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tools End -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="../node_modules/@iconify/tailwind/dist/plugin.js"></script>
     <script src="../node_modules/@iconify-json/mdi-light/index.js"></script>
     <script src="../node_modules/@iconify-json/mdi/index.js"></script>
@@ -256,9 +692,9 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <!-- vercel -->
-    <script src="js/index.js"></script>
+    <script type="module" src="js/index.js"></script>
     <!-- <script src="../src/js/index.js"></script> -->
     <script>
       var themeToggleDarkIcon = document.getElementById(

@@ -428,27 +428,113 @@
     position: relative !important;
     background-color: transparent !important;
   }
-  .container-image-about-full-one,
-  .container-image-about-full-two,
-  .container-image-about-full-three {
-    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1) !important;
-    overflow: hidden !important;
+  #aboutme > div > div > div > .container-about-full-text {
+    padding: 0 !important;
+    padding: 4rem 2rem 0rem 2rem !important;
+    height: auto !important;
+    /* border: 1px solid black !important; */
   }
-  .image-about-full-one,
-  .image-about-full-two,
-  .image-about-full-three {
-    display: block !important;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    transition: transform 400ms ease-out !important;
+  #aboutme > div > div > div > .container-about-full-text > h1 {
+    font-size: 30px !important;
   }
-  .image-about-full-one:hover,
-  .image-about-full-two:hover,
-  .image-about-full-three:hover {
-    cursor: url("../img/focus.png") 16 16, auto !important;
-    transform: scale(1.15) !important;
+  #aboutme > div > div > div > .container-about-full-text > p {
+    font-weight: 800 !important;
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+    text-shadow: 0.05px 0.05px 0 rgb(107 114 128);
   }
+  #aboutme > div > div > div > .container-about-full-text > div > iconify-icon {
+    font-size: 50px !important;
+  }
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-about-full-text
+    > .containers-spotify {
+    display: flex !important;
+    justify-content: start !important;
+    align-items: center !important;
+    gap: 20px !important;
+    /* border: 2px solid black !important; */
+    box-shadow: inset -2px -2px 0 0 rgba(0, 0, 0, 0.1) !important;
+    border-radius: 10px !important;
+    padding: 0 !important;
+    padding: 1rem 2rem !important;
+  }
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-about-full-text
+    > .containers-spotify
+    > h4 {
+    font-size: 18px !important;
+  }
+
+  .container-image-about-full-effect {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto !important;
+    padding: 5rem 0 !important;
+  }
+
+  swiper-container {
+    width: 300px;
+    height: 380px;
+  }
+
+  swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+  }
+
+  swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+  }
+
+  swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+  }
+
+  swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+  }
+
+  swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+  }
+
+  swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+  }
+
+  swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+  }
+
+  swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+  }
+
+  swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+  }
+
+  swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+  }
+
   /* about full css end */
 
   /* image popup start */
@@ -520,6 +606,68 @@
   }
 
   /* image popup end */
+
+  /* Skills Start */
+
+  #skills > div > div > div > .header > h1 {
+    font-size: 30px !important;
+  }
+  #skills > div > div > div > .header > h6 {
+    font-weight: 800 !important;
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+    text-shadow: 0.05px 0.05px 0 rgb(107 114 128) !important;
+  }
+  .container-skills {
+    padding: 3rem 5rem 3rem 5rem !important;
+    /* border: 1px solid red !important; */
+  }
+  .container-skills > div > iconify-icon {
+    font-size: 50px !important;
+  }
+  .container-skills > div > h4 {
+    font-size: 18px !important;
+  }
+  .container-skills > div {
+    border-radius: 20px !important;
+    padding: 1rem 2rem !important;
+    /* border: 2px solid red !important; */
+    box-shadow: inset -2px -2px 0 0 rgba(0, 0, 0, 0.1) !important;
+  }
+  /* Skills End */
+
+  /* Expired & Tools Start */
+  .container-expertise,
+  .container-tools {
+    padding: 1rem 4rem !important;
+  }
+  .container-expertise > .body-expertise > div > iconify-icon,
+  .container-tools > .body-tools > div > iconify-icon{
+    font-size: 40px !important;
+    transition: transform 0.8s ease-in-out;
+  }
+  .container-expertise > .body-expertise > div:hover,
+  .container-tools > .body-tools > div:hover {
+    color: #fff !important;
+    background-color: #374151 !important;
+    cursor: pointer !important;
+  }
+  .container-expertise > .body-expertise > div,
+  .container-tools > .body-tools > div {
+    border-radius: 10px !important;
+    padding: 2rem 1rem !important;
+    box-shadow: inset -2px -2px 0 0 rgba(0, 0, 0, 0.1) !important;
+  }
+  .header-expertise > h6,
+  .header-tools > h6 {
+    font-weight: 800 !important;
+    font-size: 30px !important;
+    padding: 0 !important;
+    padding: 2rem 0 !important;
+    line-height: 1.75rem !important;
+    text-shadow: 0.05px 0.05px 0 rgb(107 114 128) !important;
+  }
+  /* Expired & Tools End */
 }
 
 @media (max-width: 768px) {
