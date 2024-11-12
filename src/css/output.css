@@ -2941,12 +2941,23 @@ swiper-slide:nth-child(10n) {
   }
 
   #aboutme > div > div > div > .container-about-full-text > h1 {
-    font-size: 24px !important;
+    font-size: 20px !important;
   }
 
   #aboutme > div > div > div > .container-about-full-text > p {
-    font-size: 16px !important;
+    font-size: 14px !important;
     font-family: "jost_light" !important;
+  }
+
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-about-full-text
+    > .containers-spotify {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 6px !important;
   }
 
   #aboutme
@@ -2956,7 +2967,8 @@ swiper-slide:nth-child(10n) {
     > .container-about-full-text
     > .containers-spotify
     > iconify-icon {
-    font-size: 26px !important;
+    font-size: 30px !important;
+    margin: 0 !important;
   }
 
   #aboutme
@@ -2974,11 +2986,11 @@ swiper-slide:nth-child(10n) {
   /* skills start */
 
   #skills > div > div > div > .header > h1 {
-    font-size: 28px !important;
+    font-size: 24px !important;
   }
 
   #skills > div > div > div > .header > h6 {
-    font-size: 15px !important;
+    font-size: 14px !important;
     text-align: center !important;
   }
 
@@ -2989,7 +3001,12 @@ swiper-slide:nth-child(10n) {
     padding: 1rem 2rem 0 2rem !important;
   }
 
+  #skills > div > div > div > .body > .container-skills > div > iconify-icon {
+    font-size: 32px !important;
+  }
+
   #skills > div > div > div > .body > .container-skills > div > h4 {
+    font-size: 16px !important;
     text-align: center !important;
   }
 
