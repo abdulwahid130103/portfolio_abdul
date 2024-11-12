@@ -1329,12 +1329,21 @@
     padding: 1rem 2rem !important;
   }
   #expertise > div > div > .container-expertise > .header-expertise > h6 {
-    font-size: 28px !important;
+    font-size: 24px !important;
     text-align: center !important;
   }
   #expertise > div > div > .container-expertise > .body-expertise {
     display: grid !important;
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  #expertise
+    > div
+    > div
+    > .container-expertise
+    > .body-expertise
+    > div
+    > iconify-icon {
+    font-size: 28px !important;
   }
   /* expertise end */
 
@@ -1344,11 +1353,14 @@
     padding: 1rem 2rem !important;
   }
   #tools > div > div > .container-tools > .header-tools > h6 {
-    font-size: 28px !important;
+    font-size: 24px !important;
   }
   #tools > div > div > .container-tools > .body-tools {
     display: grid !important;
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  #tools > div > div > .container-tools > .body-tools > div > iconify-icon {
+    font-size: 28px !important;
   }
   /* tools end */
 
