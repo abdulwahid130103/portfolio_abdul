@@ -1488,6 +1488,29 @@ swiper-slide:nth-child(10n) {
 
 /* GetInTouch End */
 
+/* header start */
+
+#about-full > header > div > div > .container-logo {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: start !important;
+  align-items: center !important;
+  gap: 16px !important;
+}
+
+#about-full > header > div > div > .container-logo > a > iconify-icon {
+  font-size: 24px !important;
+  transform: translateY(3px) !important;
+}
+
+#about-full > header > div > div > .container-logo > h4 {
+  padding: 0 !important;
+  padding: 1rem 0 !important;
+  font-size: 24px !important;
+}
+
+/* header end */
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -2762,6 +2785,16 @@ swiper-slide:nth-child(10n) {
     justify-content: center !important;
   }
 
+  .image-limited-height {
+    height: 465px !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
+  }
+
+  .image-limited-width {
+    max-width: 300px !important;
+  }
+
   #about > .container > div > div > .containts-about-text > div > h1,
   #project > .container > div > div > .containts-project-text > div > h1,
   #contact > .container > div > div > .containts-contact-text > div > h1 {
@@ -2856,11 +2889,7 @@ swiper-slide:nth-child(10n) {
   /* header start */
 
   #about-full > header > div > div > .container-logo {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: start !important;
-    align-items: center !important;
-    gap: 10px !important;
+    gap: 12px !important;
   }
 
   #about-full > header > div > div > .container-logo > a > iconify-icon {
@@ -2868,8 +2897,6 @@ swiper-slide:nth-child(10n) {
   }
 
   #about-full > header > div > div > .container-logo > h4 {
-    padding: 0 !important;
-    padding: 1rem 0 !important;
     font-size: 20px !important;
   }
 

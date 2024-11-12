@@ -908,6 +908,24 @@
     font-size: 40px !important;
   }
   /* GetInTouch End */
+  /* header start */
+  #about-full > header > div > div > .container-logo {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: start !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+  #about-full > header > div > div > .container-logo > a > iconify-icon {
+    font-size: 24px !important;
+    transform: translateY(3px) !important;
+  }
+  #about-full > header > div > div > .container-logo > h4 {
+    padding: 0 !important;
+    padding: 1rem 0 !important;
+    font-size: 24px !important;
+  }
+  /* header end */
 }
 
 @media (max-width: 768px) {
@@ -1107,6 +1125,13 @@
     display: flex !important;
     justify-content: center !important;
   }
+  .image-limited-height {
+    height: 465px !important;
+    object-fit: cover !important;
+  }
+  .image-limited-width {
+    max-width: 300px !important;
+  }
 
   #about > .container > div > div > .containts-about-text > div > h1,
   #project > .container > div > div > .containts-project-text > div > h1,
@@ -1191,20 +1216,13 @@
   /* contact end */
 
   /* header start */
-
   #about-full > header > div > div > .container-logo {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: start !important;
-    align-items: center !important;
-    gap: 10px !important;
+    gap: 12px !important;
   }
   #about-full > header > div > div > .container-logo > a > iconify-icon {
     font-size: 20px !important;
   }
   #about-full > header > div > div > .container-logo > h4 {
-    padding: 0 !important;
-    padding: 1rem 0 !important;
     font-size: 20px !important;
   }
   /* header end */
