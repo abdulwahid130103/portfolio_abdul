@@ -2852,6 +2852,168 @@ swiper-slide:nth-child(10n) {
   }
 
   /* contact end */
+
+  /* detail about start*/
+
+  #about > div > div > div > .containts-about-image-full {
+    width: 100% !important;
+  }
+
+  #about > div > div > div > .containts-about-image-full > figure > a > img {
+    height: 80vh !important;
+  }
+
+  #about > div > div > div > .containts-about-text-full {
+    position: absolute !important;
+    z-index: 3 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    bottom: 0 !important;
+    padding: 0 !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    padding: 0 3rem 5rem 3rem !important;
+  }
+
+  #about > div > div > div > .containts-about-text-full > div > h1 {
+    color: #343a40 !important;
+    font-size: 40px !important;
+  }
+
+  #about > div > div > div > .containts-about-text-full > div > h1::before {
+    background-color: #343a40 !important;
+  }
+
+  #about > div > div > div > .containts-about-text-full > div > h1::after {
+    background-color: #343a40 !important;
+  }
+
+  #about > div > div > div > .containts-about-text-full > p {
+    color: #343a40 !important;
+    margin: 0 !important;
+    margin-bottom: 30px !important;
+  }
+
+  #about > div > div > div > .containts-about-text-full > a {
+    margin: 0 !important;
+  }
+
+  /* detail about end*/
+
+  /* whos start */
+
+  #whos {
+    padding: 5rem 0 1rem 0 !important;
+  }
+
+  /* whos end */
+
+  /* profile start */
+
+  #aboutme > div > div > div {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  #aboutme > div > div > div > .container-image-about-full-effect {
+    padding: 5rem 0 0 0 !important;
+  }
+
+  #aboutme > div > div > div > .container-about-full-text > h1 {
+    font-size: 26px !important;
+  }
+
+  #aboutme > div > div > div > .container-about-full-text > p {
+    font-size: 17px !important;
+    font-family: "jost_light" !important;
+  }
+
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-about-full-text
+    > .containers-spotify
+    > h4 {
+    font-size: 18px !important;
+  }
+
+  /* profile end */
+
+  /* skills start */
+
+  #skills > div > div > div > .header > h1 {
+    font-size: 30px !important;
+  }
+
+  #skills > div > div > div > .header > h6 {
+    font-size: 18px !important;
+    text-align: center !important;
+  }
+
+  #skills > div > div > div > .body > .container-skills {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    padding: 0 !important;
+    padding: 1rem 2rem 0 2rem !important;
+  }
+
+  #skills > div > div > div > .body > .container-skills > div > h4 {
+    text-align: center !important;
+  }
+
+  /* skills end */
+
+  /* expertise start */
+
+  #expertise > div > div > .container-expertise {
+    padding: 0 !important;
+    padding: 1rem 2rem !important;
+  }
+
+  #expertise > div > div > .container-expertise > .header-expertise > h6 {
+    font-size: 28px !important;
+  }
+
+  #expertise > div > div > .container-expertise > .body-expertise {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  /* expertise end */
+
+  /* tools start */
+
+  #tools > div > div > .container-tools {
+    padding: 0 !important;
+    padding: 1rem 2rem !important;
+  }
+
+  #tools > div > div > .container-tools > .header-tools > h6 {
+    font-size: 28px !important;
+  }
+
+  #tools > div > div > .container-tools > .body-tools {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  /* tools end */
+
+  /* profile start */
+
+  #profile > div > div > .body-profile > div {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  #profile > div > div > .body-profile > div > .container-image {
+    padding: 0 !important;
+    padding: 0 1.5rem !important;
+  }
+
+  /* profile end */
 }
 
 .hover\:border-darkblue:hover {
