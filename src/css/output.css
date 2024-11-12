@@ -2917,7 +2917,7 @@ swiper-slide:nth-child(10n) {
   }
 
   #aboutme > div > div > div > .container-image-about-full-effect {
-    padding: 5rem 0 0 0 !important;
+    padding: 5rem 1rem 0 1rem !important;
   }
 
   #aboutme > div > div > div > .container-about-full-text > h1 {
@@ -2974,6 +2974,7 @@ swiper-slide:nth-child(10n) {
 
   #expertise > div > div > .container-expertise > .header-expertise > h6 {
     font-size: 28px !important;
+    text-align: center !important;
   }
 
   #expertise > div > div > .container-expertise > .body-expertise {
