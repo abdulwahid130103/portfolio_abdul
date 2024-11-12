@@ -2931,7 +2931,7 @@ swiper-slide:nth-child(10n) {
 
   #aboutme > div > div > div > .container-about-full-text {
     padding: 0 !important;
-    padding: 4rem 0.2rem 2rem 0.2rem !important;
+    padding: 4rem 0.8rem 2rem 0.8rem !important;
     /* border: 1px solid red !important; */
   }
 
@@ -2941,11 +2941,11 @@ swiper-slide:nth-child(10n) {
   }
 
   #aboutme > div > div > div > .container-about-full-text > h1 {
-    font-size: 26px !important;
+    font-size: 24px !important;
   }
 
   #aboutme > div > div > div > .container-about-full-text > p {
-    font-size: 17px !important;
+    font-size: 16px !important;
     font-family: "jost_light" !important;
   }
 
@@ -2955,8 +2955,18 @@ swiper-slide:nth-child(10n) {
     > div
     > .container-about-full-text
     > .containers-spotify
+    > iconify-icon {
+    font-size: 26px !important;
+  }
+
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-about-full-text
+    > .containers-spotify
     > h4 {
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
 
   /* profile end */
