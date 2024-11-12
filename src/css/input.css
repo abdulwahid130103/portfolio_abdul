@@ -1191,6 +1191,12 @@
   /* contact end */
 
   /* detail about start*/
+  section {
+    border: 2px solid blue !important;
+    box-sizing: border-box !;
+    width: 100% !important;
+    margin: 0 !important;
+  }
   #about > div > div > div > .containts-about-image-full {
     width: 100% !important;
   }
@@ -1239,9 +1245,15 @@
   #aboutme > div > div > div {
     display: flex !important;
     flex-direction: column !important;
+    border: 1px solid red !important;
   }
   #aboutme > div > div > div > .container-image-about-full-effect {
     padding: 5rem 1rem 0 1rem !important;
+    box-sizing: border-box !important;
+  }
+  swiper-container {
+    width: 240px !important;
+    height: 320px !important;
   }
   #aboutme > div > div > div > .container-about-full-text > h1 {
     font-size: 26px !important;
