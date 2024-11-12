@@ -1190,6 +1190,24 @@
   }
   /* contact end */
 
+  /* header start */
+
+  #about-full > header > div > div > .container-logo {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: start !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+  #about-full > header > div > div > .container-logo > a > iconify-icon {
+    font-size: 20px !important;
+  }
+  #about-full > header > div > div > .container-logo > h4 {
+    padding: 0 !important;
+    padding: 1rem 0 !important;
+    font-size: 20px !important;
+  }
+  /* header end */
   /* detail about start*/
   section {
     box-sizing: border-box !;
@@ -1197,6 +1215,7 @@
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+
   #about > div > div > div > .containts-about-image-full {
     width: 100% !important;
   }

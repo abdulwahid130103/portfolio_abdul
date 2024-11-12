@@ -2853,6 +2853,28 @@ swiper-slide:nth-child(10n) {
 
   /* contact end */
 
+  /* header start */
+
+  #about-full > header > div > div > .container-logo {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: start !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  #about-full > header > div > div > .container-logo > a > iconify-icon {
+    font-size: 20px !important;
+  }
+
+  #about-full > header > div > div > .container-logo > h4 {
+    padding: 0 !important;
+    padding: 1rem 0 !important;
+    font-size: 20px !important;
+  }
+
+  /* header end */
+
   /* detail about start*/
 
   section {
@@ -3485,6 +3507,11 @@ swiper-slide:nth-child(10n) {
 
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .lg\:pl-\[100px\] {
