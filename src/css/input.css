@@ -880,19 +880,32 @@
   }
   /* profile end */
 
+  /* quotes start */
+  #quotes {
+    padding: 0 !important;
+    padding: 20rem 0 !important;
+    /* border: 1px solid red !important; */
+  }
+  #quotes > div > div > div > figure > blockquote > p {
+    font-size: 28px !important;
+  }
+  #quotes > div > div > div > figure > blockquote > p > span {
+    font-size: 22px !important;
+  }
+  /* quotes end */
+
   /* GetInTouch Start */
   #getintouch > div > div > div {
     padding: 5rem 0 !important;
-    border: 2px solid red !important;
   }
   #getintouch > div > div > div > h5 {
     font-size: 24px !important;
   }
   #getintouch > div > div > div > a > h1 {
-    font-size: 30px !important;
+    font-size: 40px !important;
   }
-  #getintouch > div > div > div > a > conify-icon {
-    font-size: 30px !important;
+  #getintouch > div > div > div > a > iconify-icon {
+    font-size: 40px !important;
   }
   /* GetInTouch End */
 }
