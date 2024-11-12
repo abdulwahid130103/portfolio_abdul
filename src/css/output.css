@@ -2856,10 +2856,10 @@ swiper-slide:nth-child(10n) {
   /* detail about start*/
 
   section {
-    border: 2px solid blue !important;
     box-sizing: border-box !;
     width: 100% !important;
-    margin: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   #about > div > div > div > .containts-about-image-full {
