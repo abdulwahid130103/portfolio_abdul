@@ -1218,7 +1218,7 @@
   }
   #about > div > div > div > .containts-about-text-full > div > h1 {
     color: #343a40 !important;
-    font-size: 40px !important;
+    font-size: 32px !important;
   }
   #about > div > div > div > .containts-about-text-full > div > h1::before {
     background-color: #343a40 !important;
@@ -1229,16 +1229,21 @@
   #about > div > div > div > .containts-about-text-full > p {
     color: #343a40 !important;
     margin: 0 !important;
+    font-size: 16px !important;
     margin-bottom: 30px !important;
   }
   #about > div > div > div > .containts-about-text-full > a {
     margin: 0 !important;
+    font-size: 16px !important;
   }
   /* detail about end*/
 
   /* whos start */
   #whos {
     padding: 5rem 0 1rem 0 !important;
+  }
+  #whos > div > div > h1 {
+    font-size: 32px !important;
   }
   /* whos end */
   /* profile start */
@@ -1364,14 +1369,109 @@
   }
   /* tools end */
 
+  /* Experience start */
+  #experience > div > .header-experience > h1 {
+    font-size: 32px !important;
+  }
+  #experience > div > .body-experience > ol > li > time {
+    font-size: 18px !important;
+  }
+  #experience > div > .body-experience > ol > li > h3 {
+    font-size: 28px !important;
+  }
+  #experience > div > .body-experience > ol > li > h5 {
+    font-size: 16px !important;
+  }
+  #experience > div > .body-experience > ol > li > p {
+    font-size: 14px !important;
+  }
+  /* Experience end */
+
   /* profile start */
   #profile > div > div > .body-profile > div {
     display: flex !important;
     flex-direction: column !important;
   }
+  #profile > div > div > .header-profile > h1 {
+    font-size: 28px !important;
+  }
+  #profile > div > div > .header-profile > h6 {
+    font-size: 18px !important;
+  }
   #profile > div > div > .body-profile > div > .container-image {
     padding: 0 !important;
     padding: 0 1.5rem !important;
   }
+  #profile
+    > div
+    > div
+    > .body-profile
+    > div
+    > .container-caption-education
+    > .caption-education
+    > h3 {
+    font-size: 18px !important;
+  }
+  #profile
+    > div
+    > div
+    > .body-profile
+    > div
+    > .container-caption-education
+    > .caption-education
+    > h1 {
+    font-size: 22px !important;
+  }
+  #profile
+    > div
+    > div
+    > .body-profile
+    > div
+    > .container-caption-education
+    > .caption-education
+    > p {
+    font-size: 16px !important;
+  }
+  #profile
+    > div
+    > div
+    > .body-profile
+    > div
+    > .container-caption-education
+    > .caption-education-two
+    > p {
+    font-size: 14px !important;
+  }
+  #profile
+    > div
+    > div
+    > .body-profile
+    > div
+    > .container-caption-education
+    > .caption-education-three
+    > h4 {
+    font-size: 14px !important;
+  }
   /* profile end */
+
+  /* quotes start */
+  #quotes > div > div > div > figure > blockquote > p {
+    font-size: 24px !important;
+  }
+  #quotes > div > div > div > figure > blockquote > p > span {
+    font-size: 20px !important;
+  }
+  /* quotes end */
+
+  /* getintouch start */
+  #getintouch > div > div > div > h5 {
+    font-size: 20px !important;
+  }
+  #getintouch > div > div > div > a > h1 {
+    font-size: 28px !important;
+  }
+  #getintouch > div > div > div > a > iconify-icon {
+    font-size: 28px !important;
+  }
+  /* getintouch end */
 }
