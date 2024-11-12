@@ -2925,8 +2925,14 @@ swiper-slide:nth-child(10n) {
   }
 
   #aboutme > div > div > div > .container-image-about-full-effect {
-    padding: 5rem 1rem 0 1rem !important;
+    padding: 5rem 0 0 0 !important;
     box-sizing: border-box !important;
+  }
+
+  #aboutme > div > div > div > .container-about-full-text {
+    padding: 0 !important;
+    padding: 4rem 0.2rem 2rem 0.2rem !important;
+    /* border: 1px solid red !important; */
   }
 
   swiper-container {
@@ -2958,11 +2964,11 @@ swiper-slide:nth-child(10n) {
   /* skills start */
 
   #skills > div > div > div > .header > h1 {
-    font-size: 30px !important;
+    font-size: 28px !important;
   }
 
   #skills > div > div > div > .header > h6 {
-    font-size: 18px !important;
+    font-size: 15px !important;
     text-align: center !important;
   }
 
