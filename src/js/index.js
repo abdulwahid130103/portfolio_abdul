@@ -60,8 +60,6 @@ function zoomInImagePopupIcon() {
   });
 }
 
-function ImageCollage() {}
-
 function imageAboutmeClick() {
   const aboutMeSection = document.getElementById("aboutme");
   const imagePopupContainer = document.querySelector(".container-image-popup");
@@ -113,6 +111,21 @@ function zoomInImagePopup() {
   });
 }
 
+function hoverProject() {
+  let items = document.querySelectorAll(".items-content");
+  items.forEach((item) => {
+    let maincontent = item.querySelector(".items-container-project");
+
+    item.addEventListener("mouseover", () => {
+      maincontent.classList.add("hidden");
+    });
+
+    item.addEventListener("mouseout", () => {
+      maincontent.classList.remove("hidden");
+    });
+  });
+}
+
 $(document).ready(function () {
   $("#hamburger").click(function () {
     toggleNavbar();
@@ -124,5 +137,5 @@ $(document).ready(function () {
   zoomInImagePopup();
   zoomInImagePopupIcon();
   imageAboutmeClick();
-  ImageCollage();
+  hoverProject();
 });

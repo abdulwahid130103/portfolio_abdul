@@ -148,7 +148,7 @@
     </section>
     <!-- About section end -->
 
-    <!-- who is am start -->
+    <!-- Higlight start -->
     <section id="whos" class="mt-16">
       <div class="container">
         <div class="w-full flex flex-col">
@@ -160,7 +160,7 @@
         </div>
       </div>
     </section>
-    <!-- who is am end -->
+    <!-- Higlight end -->
 
     <!-- image popup start -->
     <div class="container-image-popup hidden">
@@ -192,11 +192,11 @@
     <!-- image popup end -->
 
     <!-- section about me start -->
-    <section id="aboutme" class="mt-12 project-me">
+    <section id="project-me" class="mt-12 project-me">
       <div class="container">
         <div class="w-full">
           <div class="flex lg:flex-row w-full">
-            <div class="lg:w-1/2 container-image-about-full-effect">
+            <div class="lg:w-1/2 container-image-project-me-full-effect">
               <swiper-container
                 class="mySwiper"
                 effect="cards"
@@ -224,7 +224,7 @@
               </swiper-container>
             </div>
             <div
-              class="lg:w-1/2 flex flex-col items-center gap-2 container-about-full-text"
+              class="lg:w-1/2 flex flex-col items-center gap-2 container-project-me-full-text"
             >
               <h1 class="w-full font-jost_bold text-dark">Siwadul</h1>
               <p class="w-full font-jost_light text-gray-500 text-justify">
@@ -277,6 +277,17 @@
                   style="margin: 0 !important; margin-right: 2px !important"
                 >
                   <iconify-icon
+                    icon="qlementine-icons:items-grid-16"
+                    class="mr-2 text-[20px]"
+                  ></iconify-icon>
+                  All
+                </button>
+                <button
+                  type="button"
+                  class="inline-flex items-center px-4 py-2 text-[18px] font-jost_medium text-white bg-darkblue border-t border-b border-darkblue hover:bg-transparent hover:text-darkblue dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white"
+                  style="margin: 0 !important; margin-right: 2px !important"
+                >
+                  <iconify-icon
                     class="mr-2 text-[24px]"
                     icon="proicons:webpack"
                   ></iconify-icon>
@@ -295,7 +306,10 @@
               </div>
             </div>
             <div class="body-all-projects grid grid-cols-2 gap-4 mt-5">
-              <div class="relative w-full rounded-lg">
+              <a
+                href="detail-project.html"
+                class="relative w-full items-content hover:cursor-pointer"
+              >
                 <img
                   class="rounded-lg"
                   src="img/pj.png"
@@ -316,8 +330,11 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="relative w-full">
+              </a>
+              <a
+                href=""
+                class="relative w-full items-content hover:cursor-pointer"
+              >
                 <img
                   class="rounded-lg"
                   src="img/pj.png"
@@ -338,8 +355,11 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="relative w-full">
+              </a>
+              <a
+                href=""
+                class="relative w-full items-content hover:cursor-pointer"
+              >
                 <img
                   class="rounded-lg"
                   src="img/pj.png"
@@ -360,8 +380,11 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="relative w-full">
+              </a>
+              <a
+                href=""
+                class="relative w-full items-content hover:cursor-pointer"
+              >
                 <img
                   class="rounded-lg"
                   src="img/pj.png"
@@ -382,9 +405,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
-            <div class="footer-all-projects mt-12">
+            <div href="" class="footer-all-projects mt-12">
               <div class="w-full flex justify-center items-center gap-2">
                 <a
                   href="#"

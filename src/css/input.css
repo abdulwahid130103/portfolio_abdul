@@ -481,12 +481,22 @@
     padding: 5rem 0 !important;
   }
 
-  swiper-container {
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effec
+    > swiper-container {
     width: 300px;
     height: 380px;
   }
 
-  swiper-slide {
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effec
+    > swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -496,43 +506,93 @@
     color: #fff;
   }
 
-  swiper-slide:nth-child(1n) {
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effec
+    > swiper-slide:nth-child(1n) {
     background-color: rgb(206, 17, 17);
   }
 
-  swiper-slide:nth-child(2n) {
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effec
+    > swiper-slide:nth-child(2n) {
     background-color: rgb(0, 140, 255);
   }
 
-  swiper-slide:nth-child(3n) {
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effec
+    > swiper-slide:nth-child(3n) {
     background-color: rgb(10, 184, 111);
   }
 
-  swiper-slide:nth-child(4n) {
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effec
+    > swiper-slide:nth-child(4n) {
     background-color: rgb(211, 122, 7);
   }
 
-  swiper-slide:nth-child(5n) {
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effec
+    > swiper-slide:nth-child(5n) {
     background-color: rgb(118, 163, 12);
   }
 
-  swiper-slide:nth-child(6n) {
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effec
+    > swiper-slide:nth-child(6n) {
     background-color: rgb(180, 10, 47);
   }
 
-  swiper-slide:nth-child(7n) {
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effec
+    > swiper-slide:nth-child(7n) {
     background-color: rgb(35, 99, 19);
   }
 
-  swiper-slide:nth-child(8n) {
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effec
+    > swiper-slide:nth-child(8n) {
     background-color: rgb(0, 68, 255);
   }
 
-  swiper-slide:nth-child(9n) {
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effec
+    > swiper-slide:nth-child(9n) {
     background-color: rgb(218, 12, 218);
   }
 
-  swiper-slide:nth-child(10n) {
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effec
+    > swiper-slide:nth-child(10n) {
     background-color: rgb(54, 94, 77);
   }
 
@@ -929,20 +989,29 @@
   /* header end */
 }
 /* project detail start */
-.project-me
+#project-me
   > div
   > div
   > div
-  > .container-image-about-full-effect
+  > .container-image-project-me-full-effect
   > swiper-container {
   width: 460px !important;
   height: 320px !important;
 }
-.project-me
+#project-me
   > div
   > div
   > div
-  > .container-image-about-full-effect
+  > .container-image-project-me-full-effect
+  > swiper-container
+  > swiper-slide {
+  border-radius: 18px;
+}
+#project-me
+  > div
+  > div
+  > div
+  > .container-image-project-me-full-effect
   > swiper-container
   > swiper-slide
   > img {
@@ -957,7 +1026,7 @@
   > div
   > div
   > .body-all-projects
-  > div
+  > .items-content
   > .items-container-project {
   position: absolute !important;
   width: 100% !important;
@@ -975,7 +1044,7 @@
   > div
   > div
   > .body-all-projects
-  > div
+  > .items-content
   > .items-container-project
   > div {
   width: 100% !important;
@@ -992,7 +1061,7 @@
   > div
   > div
   > .body-all-projects
-  > div
+  > .items-content
   > .items-container-project
   > div
   > h1 {
@@ -1004,7 +1073,7 @@
   > div
   > div
   > .body-all-projects
-  > div
+  > .items-content
   > .items-container-project
   > div
   > p {
@@ -1017,7 +1086,7 @@
   > div
   > div
   > .body-all-projects
-  > div
+  > .items-content
   > .items-container-project
   > div
   > div
@@ -1030,6 +1099,41 @@
 }
 /* all projects end */
 /* project detail end */
+
+/* detail deskripsi project start */
+#deskripsi > div > div > .container-slide-img {
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+  /* border: 2px solid red !important; */
+}
+#deskripsi > div > div > .container-deskripsi-content {
+  margin-bottom: 5rem !important;
+  /* border: 2px solid red !important; */
+}
+#deskripsi > div > div > .container-slide-img > swiper-container {
+  width: 100% !important;
+  height: 100% !important;
+  color: #343a40 !important;
+}
+
+#deskripsi > div > div > .container-slide-img > swiper-slide {
+  text-align: center !important;
+  font-size: 18px !important;
+  background: #fff !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: #343a40 !important;
+}
+
+#deskripsi > div > div > .container-slide-img > swiper-slide img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+/* detail deskripsi project end */
 
 @media (max-width: 768px) {
   .container-sidebar {
@@ -1616,7 +1720,7 @@
   /* getintouch end */
 
   /* project detail start */
-  .project-me
+  #project-me
     > div
     > div
     > div
@@ -1625,7 +1729,7 @@
     width: 380px !important;
     height: 240px !important;
   }
-  .project-me
+  #project-me
     > div
     > div
     > div
