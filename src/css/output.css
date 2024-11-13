@@ -918,6 +918,13 @@ html {
      object-fit: cover !important;
 }
 
+#about-full > section {
+  box-sizing: border-box !;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 #whos > div > div > .line-one-about-full,
   #whos > div > div > .line-two-about-full {
   width: 8% !important;
@@ -997,6 +1004,132 @@ html {
   align-items: center !important;
   height: auto !important;
   padding: 5rem 0 !important;
+}
+
+#aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effect
+    > swiper-container {
+  width: 300px !important;
+  height: 380px !important;
+}
+
+#aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effect
+    > swiper-container
+    > swiper-slide {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 18px !important;
+  font-size: 22px !important;
+  font-weight: bold !important;
+  color: #fff !important;
+}
+
+#aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effect
+    > swiper-container
+    > swiper-slide:nth-child(1n) {
+  background-color: rgb(206, 17, 17) !important;
+}
+
+#aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effect
+    > swiper-container
+    > swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255) !important;
+}
+
+#aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effect
+    > swiper-container
+    > swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111) !important;
+}
+
+#aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effect
+    > swiper-container
+    > swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7) !important;
+}
+
+#aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effect
+    > swiper-container
+    > swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12) !important;
+}
+
+#aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effect
+    > swiper-container
+    > swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47) !important;
+}
+
+#aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effect
+    > swiper-container
+    > swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19) !important;
+}
+
+#aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effect
+    > swiper-container
+    > swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255) !important;
+}
+
+#aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effect
+    > swiper-container
+    > swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218) !important;
+}
+
+#aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effect
+    > swiper-container
+    > swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77) !important;
 }
 
 /* about full css end */
@@ -1618,10 +1751,6 @@ html {
   margin-bottom: 1.25rem;
 }
 
-.me-2 {
-  margin-inline-end: 0.5rem;
-}
-
 .ml-7 {
   margin-left: 1.75rem;
 }
@@ -1934,10 +2063,6 @@ html {
   overflow-y: hidden;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -2034,11 +2159,6 @@ html {
   background-color: rgb(230 230 230 / var(--tw-bg-opacity));
 }
 
-.bg-blue-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
-}
-
 .bg-blue-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
@@ -2113,11 +2233,6 @@ html {
   padding-right: 0.5rem;
 }
 
-.px-2\.5 {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2136,11 +2251,6 @@ html {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.py-0\.5 {
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
 }
 
 .py-2 {
@@ -2241,10 +2351,6 @@ html {
   font-size: 24px;
 }
 
-.text-\[28px\] {
-  font-size: 28px;
-}
-
 .text-\[32px\] {
   font-size: 32px;
 }
@@ -2302,11 +2408,6 @@ html {
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
-.text-blue-800 {
-  --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
-}
-
 .text-dark {
   --tw-text-opacity: 1;
   color: rgb(52 58 64 / var(--tw-text-opacity));
@@ -2340,10 +2441,6 @@ html {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
 }
 
 .opacity-0 {
@@ -2578,6 +2675,14 @@ html {
   height: 320px !important;
 }
 
+#project-me > div > div > div > .container-project-me-full-text > h1 {
+  font-size: 32px !important;
+}
+
+#project-me > div > div > div > .container-project-me-full-text > p {
+  font-size: 20px !important;
+}
+
 #project-me
   > div
   > div
@@ -2585,7 +2690,7 @@ html {
   > .container-image-project-me-full-effect
   > swiper-container
   > swiper-slide {
-  border-radius: 18px;
+  border-radius: 18px !important;
 }
 
 #project-me
@@ -2619,8 +2724,6 @@ html {
   left: 0 !important;
   background-color: rgba(55, 65, 81, 0.8) !important;
   border-radius: 0.5rem !important;
-  /* backdrop-filter: blur(2px) !important;
-  -webkit-backdrop-filter: blur(2px) !important; */
 }
 
 #otherprojects
@@ -3082,8 +3185,8 @@ html {
 
   /* detail about start*/
 
-  section {
-    box-sizing: border-box !;
+  #about-full > section {
+    box-sizing: border-box !important;
     width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -3168,7 +3271,12 @@ html {
     /* border: 1px solid red !important; */
   }
 
-  swiper-container {
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effect
+    > swiper-container {
     width: 240px !important;
     height: 320px !important;
   }
@@ -3596,11 +3704,6 @@ html {
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
-.dark\:bg-blue-900:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
-}
-
 .dark\:bg-gray-600:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
@@ -3626,11 +3729,6 @@ html {
 
 .dark\:bg-transparent:is(.dark *) {
   background-color: transparent;
-}
-
-.dark\:text-blue-300:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(147 197 253 / var(--tw-text-opacity));
 }
 
 .dark\:text-blue-500:is(.dark *) {

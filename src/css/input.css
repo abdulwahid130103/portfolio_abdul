@@ -407,6 +407,12 @@
     height: 100% !important;
     object-fit: cover !important;
   }
+  #about-full > section {
+    box-sizing: border-box !;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 
   #whos > div > div > .line-one-about-full,
   #whos > div > div > .line-two-about-full {
@@ -485,115 +491,126 @@
     > div
     > div
     > div
-    > .container-image-about-full-effec
+    > .container-image-about-full-effect
     > swiper-container {
-    width: 300px;
-    height: 380px;
+    width: 300px !important;
+    height: 380px !important;
   }
 
   #aboutme
     > div
     > div
     > div
-    > .container-image-about-full-effec
+    > .container-image-about-full-effect
+    > swiper-container
     > swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 18px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 18px !important;
+    font-size: 22px !important;
+    font-weight: bold !important;
+    color: #fff !important;
   }
 
   #aboutme
     > div
     > div
     > div
-    > .container-image-about-full-effec
+    > .container-image-about-full-effect
+    > swiper-container
     > swiper-slide:nth-child(1n) {
-    background-color: rgb(206, 17, 17);
+    background-color: rgb(206, 17, 17) !important;
   }
 
   #aboutme
     > div
     > div
     > div
-    > .container-image-about-full-effec
+    > .container-image-about-full-effect
+    > swiper-container
     > swiper-slide:nth-child(2n) {
-    background-color: rgb(0, 140, 255);
+    background-color: rgb(0, 140, 255) !important;
   }
 
   #aboutme
     > div
     > div
     > div
-    > .container-image-about-full-effec
+    > .container-image-about-full-effect
+    > swiper-container
     > swiper-slide:nth-child(3n) {
-    background-color: rgb(10, 184, 111);
+    background-color: rgb(10, 184, 111) !important;
   }
 
   #aboutme
     > div
     > div
     > div
-    > .container-image-about-full-effec
+    > .container-image-about-full-effect
+    > swiper-container
     > swiper-slide:nth-child(4n) {
-    background-color: rgb(211, 122, 7);
+    background-color: rgb(211, 122, 7) !important;
   }
 
   #aboutme
     > div
     > div
     > div
-    > .container-image-about-full-effec
+    > .container-image-about-full-effect
+    > swiper-container
     > swiper-slide:nth-child(5n) {
-    background-color: rgb(118, 163, 12);
+    background-color: rgb(118, 163, 12) !important;
   }
 
   #aboutme
     > div
     > div
     > div
-    > .container-image-about-full-effec
+    > .container-image-about-full-effect
+    > swiper-container
     > swiper-slide:nth-child(6n) {
-    background-color: rgb(180, 10, 47);
+    background-color: rgb(180, 10, 47) !important;
   }
 
   #aboutme
     > div
     > div
     > div
-    > .container-image-about-full-effec
+    > .container-image-about-full-effect
+    > swiper-container
     > swiper-slide:nth-child(7n) {
-    background-color: rgb(35, 99, 19);
+    background-color: rgb(35, 99, 19) !important;
   }
 
   #aboutme
     > div
     > div
     > div
-    > .container-image-about-full-effec
+    > .container-image-about-full-effect
+    > swiper-container
     > swiper-slide:nth-child(8n) {
-    background-color: rgb(0, 68, 255);
+    background-color: rgb(0, 68, 255) !important;
   }
 
   #aboutme
     > div
     > div
     > div
-    > .container-image-about-full-effec
+    > .container-image-about-full-effect
+    > swiper-container
     > swiper-slide:nth-child(9n) {
-    background-color: rgb(218, 12, 218);
+    background-color: rgb(218, 12, 218) !important;
   }
 
   #aboutme
     > div
     > div
     > div
-    > .container-image-about-full-effec
+    > .container-image-about-full-effect
+    > swiper-container
     > swiper-slide:nth-child(10n) {
-    background-color: rgb(54, 94, 77);
+    background-color: rgb(54, 94, 77) !important;
   }
 
   /* about full css end */
@@ -998,6 +1015,12 @@
   width: 460px !important;
   height: 320px !important;
 }
+#project-me > div > div > div > .container-project-me-full-text > h1 {
+  font-size: 32px !important;
+}
+#project-me > div > div > div > .container-project-me-full-text > p {
+  font-size: 20px !important;
+}
 #project-me
   > div
   > div
@@ -1005,7 +1028,7 @@
   > .container-image-project-me-full-effect
   > swiper-container
   > swiper-slide {
-  border-radius: 18px;
+  border-radius: 18px !important;
 }
 #project-me
   > div
@@ -1036,8 +1059,6 @@
   left: 0 !important;
   background-color: rgba(55, 65, 81, 0.8) !important;
   border-radius: 0.5rem !important;
-  /* backdrop-filter: blur(2px) !important;
-  -webkit-backdrop-filter: blur(2px) !important; */
 }
 #otherprojects
   > div
@@ -1434,8 +1455,8 @@
   }
   /* header end */
   /* detail about start*/
-  section {
-    box-sizing: border-box !;
+  #about-full > section {
+    box-sizing: border-box !important;
     width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -1505,7 +1526,12 @@
     padding: 4rem 0.8rem 2rem 0.8rem !important;
     /* border: 1px solid red !important; */
   }
-  swiper-container {
+  #aboutme
+    > div
+    > div
+    > div
+    > .container-image-about-full-effect
+    > swiper-container {
     width: 240px !important;
     height: 320px !important;
   }
