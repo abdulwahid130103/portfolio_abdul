@@ -2893,6 +2893,32 @@ html {
 
 /* archive end */
 
+/* header project start */
+
+#project-parent > header > div > div > .container-logo {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: start !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+#project-parent > header > div > div > .container-logo > h4 {
+  font-size: 24px !important;
+}
+
+#project-parent > header > div > div > .container-logo > a > iconify-icon {
+  font-size: 24px !important;
+  transform: translateY(3px) !important;
+}
+
+#project-parent > header {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* header project end */
+
 @media (max-width: 768px) {
   .container-sidebar {
     display: none;
@@ -3628,8 +3654,8 @@ html {
     > div
     > .container-image-project-me-full-effect
     > swiper-container {
-    width: 340px !important;
-    height: 200px !important;
+    width: 300px !important;
+    height: 160px !important;
   }
 
   #project-me
@@ -3712,7 +3738,7 @@ html {
     > .items-container-project
     > div
     > h1 {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
 
   #project-parent
@@ -3725,7 +3751,7 @@ html {
     > .items-container-project
     > div
     > p {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
 
   #project-parent
