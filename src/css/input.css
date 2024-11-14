@@ -1774,21 +1774,44 @@
   }
   /* getintouch end */
 
-  /* project detail start */
-  #project-me
-    > div
-    > div
-    > div
-    > .container-image-about-full-effect
-    > swiper-container {
-    width: 380px !important;
-    height: 240px !important;
+  /* responsive project start */
+
+  #project-parent > header > div > div > .container-logo {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+  #project-parent > header > div > div > .container-logo > h4 {
+    font-size: 20px !important;
+  }
+  #project-parent > header > div > div > .container-logo > a > iconify-icon {
+    transform: translateY(3px) !important;
+  }
+  #project-parent > header {
+    padding: 0 !important;
+    padding: 1rem 0 !important;
+  }
+
+  #project-me > div > div > div {
+    display: flex !important;
+    flex-direction: column !important;
   }
   #project-me
     > div
     > div
     > div
-    > .container-image-about-full-effect
+    > .container-image-project-me-full-effect
+    > swiper-container {
+    width: 340px !important;
+    height: 200px !important;
+  }
+  #project-me
+    > div
+    > div
+    > div
+    > .container-image-project-me-full-effect
     > swiper-container
     > swiper-slide
     > img {
@@ -1796,6 +1819,110 @@
     height: 100% !important;
     object-fit: cover !important;
   }
+  #project-me > div > div > div > .container-project-me-full-text {
+    padding: 1rem !important;
+  }
+  #project-me > div > div > div > .container-project-me-full-text > h1 {
+    font-size: 28px !important;
+  }
+  #project-me > div > div > div > .container-project-me-full-text > p {
+    font-size: 16px !important;
+  }
+  #project-me > div > div > div > .container-project-me-full-text > div > a {
+    padding: 0.7rem 2rem !important;
+    font-size: 16px !important;
+  }
 
-  /* project detail end */
+  .all-project-higlight {
+    margin: 0 !important;
+    margin-top: 2rem !important;
+  }
+
+  #otherprojects > div > div > div > .header-all-projects > div > button {
+    font-size: 14px !important;
+    padding: 0 !important;
+    padding: 0.4rem 0.6rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: start !important;
+    align-items: center !important;
+  }
+  #otherprojects
+    > div
+    > div
+    > div
+    > .header-all-projects
+    > div
+    > button
+    > iconify-icon {
+    font-size: 20px !important;
+  }
+
+  #otherprojects > div > div > div > .body-all-projects {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 !important;
+    margin-top: 2rem !important;
+  }
+  #otherprojects > div > div > div > .body-all-projects > a {
+    position: relative !important;
+  }
+  #project-parent
+    > #otherprojects
+    > div
+    > div
+    > div
+    > .body-all-projects
+    > a
+    > .items-container-project
+    > div
+    > h1 {
+    font-size: 16px !important;
+  }
+  #project-parent
+    > #otherprojects
+    > div
+    > div
+    > div
+    > .body-all-projects
+    > a
+    > .items-container-project
+    > div
+    > p {
+    font-size: 14px !important;
+  }
+  #project-parent
+    > #otherprojects
+    > div
+    > div
+    > div
+    > .body-all-projects
+    > a
+    > .items-container-project
+    > div
+    > div
+    > h3 {
+    font-size: 12px !important;
+  }
+  #project-parent
+    > #otherprojects
+    > div
+    > div
+    > div
+    > .footer-all-projects
+    > div
+    > a {
+    padding: 0 !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 14px !important;
+  }
+
+  footer > div > span {
+    margin: 0 !important;
+    text-align: center !important;
+  }
+
+  /* responsive project end */
 }
