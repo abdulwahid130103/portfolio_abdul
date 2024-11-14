@@ -1800,7 +1800,7 @@
   #project-parent > header > div > div > .container-logo {
     display: flex !important;
     flex-direction: row !important;
-    justify-content: center !important;
+    justify-content: start !important;
     align-items: center !important;
     gap: 10px !important;
   }
