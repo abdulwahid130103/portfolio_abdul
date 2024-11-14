@@ -158,6 +158,35 @@
     </header>
     <!-- navbar end -->
 
+    <!-- image popup start -->
+    <div class="container-image-popup hidden">
+      <div
+        class="flex flex-col h-[100%]"
+        style="box-sizing: border-box !important"
+      >
+        <div
+          class="w-full flex-1 z-[999] header-image-popup flex justify-end gap-5 px-5 py-5"
+        >
+          <iconify-icon
+            icon="ri:focus-3-line"
+            class="focus-icon-image-popup"
+          ></iconify-icon>
+          <iconify-icon
+            icon="iwwa:delete"
+            class="delete-icon-image-popup"
+          ></iconify-icon>
+        </div>
+        <div class="w-full body-image-popup">
+          <img
+            class="w-full img-popup"
+            src="img/abdul_foto_new.jpg"
+            alt="image description"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- image popup end -->
+
     <!-- deskripsi start -->
     <section id="deskripsi" class="mt-36">
       <div class="container">
@@ -296,21 +325,6 @@
     <script type="module" src="js/index.js"></script>
     <!-- <script src="../src/js/index.js"></script> -->
     <script>
-      // window.onload = function () {
-      //   const urlParams = new URLSearchParams(window.location.search);
-      //   console.log(urlParams);
-
-      //   const projectName = urlParams.get("project");
-      //   const tech = urlParams.get("tech");
-      //   const year = urlParams.get("year");
-      //   const code = urlParams.get("code");
-
-      //   // Kamu bisa menggunakan data ini untuk menampilkan informasi proyek di halaman
-      //   document.getElementById("name-project").innerText = projectName;
-      //   document.getElementById("teknology-project").innerText = tech;
-      //   document.getElementById("year-project").innerText = year;
-      //   document.getElementById("source-code-project").href = code;
-      // };
       window.onload = function () {
         const projectData = JSON.parse(localStorage.getItem("projectData"));
         if (projectData) {
@@ -364,6 +378,32 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+
+      const deskripsiSelection = document.getElementById("deskripsi");
+      const imagePopupContainer = document.querySelector(
+        ".container-image-popup"
+      );
+      const popupImage = document.querySelector(".img-popup");
+      const body = document.querySelector("body");
+
+      deskripsiSelection.addEventListener("click", (event) => {
+        const clickedImage = event.target;
+        if (clickedImage.tagName === "IMG") {
+          popupImage.src = clickedImage.src;
+          body.classList.remove("overflow-y-auto");
+          body.classList.add("overflow-y-hidden");
+          imagePopupContainer.classList.remove("hidden");
+        }
+      });
+
+      const deleteIcon = document.querySelector(".delete-icon-image-popup");
+
+      deleteIcon.addEventListener("click", () => {
+        imagePopupContainer.classList.add("hidden");
+        body.classList.remove("overflow-y-hidden");
+        body.classList.add("overflow-y-auto");
+        popupImage.src = "";
       });
     </script>
   </body>
