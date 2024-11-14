@@ -3718,7 +3718,7 @@ html {
   #otherprojects > div > div > div > .body-all-projects {
     display: flex !important;
     flex-direction: column !important;
-    justify-content: center !important;
+    justify-content: start !important;
     align-items: center !important;
     margin: 0 !important;
     margin-top: 2rem !important;
@@ -3787,6 +3787,107 @@ html {
   }
 
   /* responsive project end */
+
+  /* responsive detail project start */
+
+  #deskripsi > div > div > .container-deskripsi-content {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  #deskripsi
+    > div
+    > div
+    > .container-deskripsi-content
+    > .deskripsi-content-one {
+    width: 100% !important;
+  }
+
+  #deskripsi
+    > div
+    > div
+    > .container-deskripsi-content
+    > .deskripsi-content-one
+    > div
+    > h3 {
+    font-size: 18px !important;
+  }
+
+  #deskripsi
+    > div
+    > div
+    > .container-deskripsi-content
+    > .deskripsi-content-one
+    > div
+    > a {
+    font-size: 20px !important;
+  }
+
+  #deskripsi
+    > div
+    > div
+    > .container-deskripsi-content
+    > .deskripsi-content-one
+    > div
+    > span {
+    font-size: 20px !important;
+  }
+
+  #deskripsi
+    > div
+    > div
+    > .container-deskripsi-content
+    > .deskripsi-content-one
+    > div
+    > #name-project {
+    font-size: 24px !important;
+  }
+
+  #deskripsi
+    > div
+    > div
+    > .container-deskripsi-content
+    > .deskripsi-content-two
+    > h3 {
+    font-size: 20px !important;
+  }
+
+  #deskripsi
+    > div
+    > div
+    > .container-deskripsi-content
+    > .deskripsi-content-two
+    > span {
+    font-size: 18px !important;
+  }
+
+  .image-app-detail-project {
+    width: 600px !important;
+    height: 600px !important;
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+  }
+
+  /* archive start */
+
+  #archive > div > div > div > table > thead {
+    font-size: 20px !important;
+  }
+
+  #archive > div > div > div > table > tbody > tr {
+    font-size: 18px !important;
+  }
+
+  #archive > div > div > div > table > tbody > tr > td > a {
+    display: flex !important;
+    justify-content: start !important;
+    align-items: center !important;
+    gap: 5px !important;
+  }
+
+  /* archive end */
+
+  /* responsive detail project end */
 }
 
 .hover\:cursor-pointer:hover {
