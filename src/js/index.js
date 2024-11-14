@@ -59,32 +59,6 @@ function zoomInImagePopupIcon() {
   });
 }
 
-function imageAboutmeClick() {
-  const aboutMeSection = document.getElementById("aboutme");
-  const imagePopupContainer = document.querySelector(".container-image-popup");
-  const popupImage = document.querySelector(".img-popup");
-  const body = document.querySelector("body");
-
-  aboutMeSection.addEventListener("click", (event) => {
-    const clickedImage = event.target;
-    if (clickedImage.tagName === "IMG") {
-      popupImage.src = clickedImage.src;
-      body.classList.remove("overflow-y-auto");
-      body.classList.add("overflow-y-hidden");
-      imagePopupContainer.classList.remove("hidden");
-    }
-  });
-
-  const deleteIcon = document.querySelector(".delete-icon-image-popup");
-
-  deleteIcon.addEventListener("click", () => {
-    imagePopupContainer.classList.add("hidden");
-    body.classList.remove("overflow-y-hidden");
-    body.classList.add("overflow-y-auto");
-    popupImage.src = "";
-  });
-}
-
 function zoomInImagePopup() {
   const imagePopup = document.querySelector(".img-popup");
 
@@ -135,6 +109,5 @@ $(document).ready(function () {
   scrollWindow();
   zoomInImagePopup();
   zoomInImagePopupIcon();
-  imageAboutmeClick();
   hoverProject();
 });

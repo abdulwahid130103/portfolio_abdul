@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/output.css" rel="stylesheet" />
+    <script src="../node_modules/flowbite/dist/flowbite.min.css"></script>
+
+    <!-- <script>
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script> -->
+  </head>
+  <body class="bg-abu" id="about-full">
+    <!-- navbar start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <div class="container-logo px-4 w-1/2">
+            <a href="project.html">
+              <iconify-icon
+                class="text-dark"
+                icon="weui:back-filled"
+              ></iconify-icon>
+            </a>
+            <h4
+              id="head-logo"
+              class="block lg:py-6 head-logo transition duration-300 ease-in-out"
+            >
+              Abdul
+            </h4>
+          </div>
+          <div
+            class="flex items-center justify-end px-4 w-1/2 relative container-hamburger"
+          >
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute transition duration-300 ease-in-out"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out hidden"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+
+            <nav id="nav-menu" class="nav-menu hidden">
+              <ul
+                class="flex justify-center menu-items items-center gap-6 flex-col"
+              >
+                <li>
+                  <a
+                    href="index.html#hero"
+                    class="text-white font-jost_medium list-menu-hamburger nav-link"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#about"
+                    class="text-white font-jost_medium list-menu-hamburger nav-link"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#project"
+                    class="text-white font-jost_medium list-menu-hamburger nav-link"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#contact"
+                    class="text-white font-jost_medium list-menu-hamburger nav-link"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- navbar end -->
+
+    <!-- Archive start -->
+    <section id="whos" class="mt-16">
+      <div class="container">
+        <div class="w-full flex flex-col">
+          <div class="line-one-about-full"></div>
+          <div class="line-two-about-full"></div>
+          <h1 class="text-dark font-jost_extra_bold text-bold mb-4 text-whos">
+            Archive
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- Archive end -->
+
+    <section id="archive">
+      <div class="container">
+        <div class="w-full">
+          <div class="relative overflow-x-auto">
+            <table
+              class="w-full text-sm text-left rtl:text-right text-dark dark:text-gray-400"
+            >
+              <thead
+                class="text-xs text-dark font-jost_bold bg-transparent dark:bg-gray-700 dark:text-gray-400"
+              >
+                <tr>
+                  <th scope="col" class="px-6 py-3">Year</th>
+                  <th scope="col" class="px-6 py-3">Tittle</th>
+                  <th scope="col" class="px-6 py-3">Teknology</th>
+                  <th scope="col" class="px-6 py-3">Source</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="bg-transparent font-jost_medium border-b dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <td class="px-6 py-4">2024</td>
+                  <td class="px-6 py-4">Siwadul Project</td>
+                  <td class="px-6 py-4">Laravel,TailwindCss,Flowbite,Mysql</td>
+                  <td class="px-6 py-4">
+                    <a
+                      href="https://github.com/abdulwahid130103/proyek_siwadul"
+                      target="_blank"
+                      class="hover:underline"
+                    >
+                      <iconify-icon
+                        style="font-size: 24px !important"
+                        icon="mdi:github"
+                      ></iconify-icon
+                      >Github
+                    </a>
+                  </td>
+                </tr>
+                <tr
+                  class="bg-transparent font-jost_medium border-b dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <td class="px-6 py-4">2024</td>
+                  <td class="px-6 py-4">Implementing ETL For Data Warehouse</td>
+                  <td class="px-6 py-4">Laravel,Bootstrap,Mysql</td>
+                  <td class="px-6 py-4">
+                    <a
+                      href="https://github.com/abdulwahid130103/Smartdashboard"
+                      target="_blank"
+                      class="hover:underline"
+                    >
+                      <iconify-icon
+                        style="font-size: 24px !important"
+                        icon="mdi:github"
+                      ></iconify-icon
+                      >Github
+                    </a>
+                  </td>
+                </tr>
+                <tr
+                  class="bg-transparent font-jost_medium border-b dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <td class="px-6 py-4">2024</td>
+                  <td class="px-6 py-4">Camera Rental System</td>
+                  <td class="px-6 py-4">Kotlin,XML,Mysql</td>
+                  <td class="px-6 py-4">
+                    <a
+                      href="https://github.com/abdulwahid130103/sewakamera"
+                      target="_blank"
+                      class="hover:underline"
+                    >
+                      <iconify-icon
+                        style="font-size: 24px !important"
+                        icon="mdi:github"
+                      ></iconify-icon
+                      >Github
+                    </a>
+                  </td>
+                </tr>
+                <tr
+                  class="bg-transparent font-jost_medium border-b dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <td class="px-6 py-4">2023</td>
+                  <td class="px-6 py-4">Web-Based Book Borrowing System</td>
+                  <td class="px-6 py-4">Laravel,Bootstrap,Mysql</td>
+                  <td class="px-6 py-4">
+                    <a
+                      href="https://github.com/abdulwahid130103/aplikasi-perpustakaan-buku"
+                      target="_blank"
+                      class="hover:underline"
+                    >
+                      <iconify-icon
+                        style="font-size: 24px !important"
+                        icon="mdi:github"
+                      ></iconify-icon
+                      >Github
+                    </a>
+                  </td>
+                </tr>
+                <tr
+                  class="bg-transparent font-jost_medium border-b dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <td class="px-6 py-4">2024</td>
+                  <td class="px-6 py-4">Video Editing Training Platform</td>
+                  <td class="px-6 py-4">Laravel,Bootstrap,Mysql</td>
+                  <td class="px-6 py-4">
+                    <a
+                      href="https://github.com/abdulwahid130103/website-editing-vidio"
+                      target="_blank"
+                      class="hover:underline"
+                    >
+                      <iconify-icon
+                        style="font-size: 24px !important"
+                        icon="mdi:github"
+                      ></iconify-icon
+                      >Github
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get In Touch Start -->
+    <section id="getintouch" class="mt-36">
+      <div class="container">
+        <div class="w-full">
+          <div class="flex flex-col justify-center items-center w-full">
+            <h5 class="font-jost_medium text-dark">
+              Want something like this?
+            </h5>
+            <a
+              href="index.html#contact"
+              class="flex flex-row justify-center items-center gap-2 hover:underline"
+            >
+              <h1 class="font-jost_bold text-dark">Get In Touch</h1>
+              <iconify-icon icon="icon-park-outline:right-c"></iconify-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Get In Touch End -->
+
+    <!-- footer start -->
+    <footer class="bg-transparent dark:bg-gray-900">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <span
+          class="block text-dark font-jost_medium sm:text-center dark:text-gray-400"
+          >© 2024 - Abdul
+        </span>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../node_modules/@iconify/tailwind/dist/plugin.js"></script>
+    <script src="../node_modules/@iconify-json/mdi-light/index.js"></script>
+    <script src="../node_modules/@iconify-json/mdi/index.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- vercel -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

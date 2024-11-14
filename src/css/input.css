@@ -1156,6 +1156,35 @@
 }
 /* detail deskripsi project end */
 
+/* image app start */
+.container-image-app-detail-project {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  object-fit: contain !important;
+}
+.image-app-detail-project {
+  width: 800px !important;
+  height: 800px !important;
+  object-fit: contain !important;
+}
+/* image app end */
+
+/* archive start */
+#archive > div > div > div > table > thead {
+  font-size: 26px !important;
+}
+#archive > div > div > div > table > tbody > tr {
+  font-size: 20px !important;
+}
+#archive > div > div > div > table > tbody > tr > td > a {
+  display: flex !important;
+  justify-content: start !important;
+  align-items: center !important;
+  gap: 5px !important;
+}
+/* archive end */
+
 @media (max-width: 768px) {
   .container-sidebar {
     display: none;
