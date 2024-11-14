@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/output.css" rel="stylesheet" />
     <script src="../node_modules/flowbite/dist/flowbite.min.css"></script>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- <script>
       if (
         localStorage.getItem("color-theme") === "dark" ||
@@ -17,6 +20,62 @@
         document.documentElement.classList.remove("dark");
       }
     </script> -->
+    <style>
+      .swiper-custom {
+        position: relative !important;
+      }
+      .swiper {
+        width: 100% !important;
+        height: 100% !important;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .swiper-button-prev,
+      .swiper-button-next {
+        background-color: #343a40 !important;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 50% !important;
+      }
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        color: #fff !important;
+        font-size: 24px !important;
+      }
+      @media (max-width: 768px) {
+        .swiper-button-prev,
+        .swiper-button-next {
+          background-color: #343a40 !important;
+          width: 30px !important;
+          height: 30px !important;
+          border-radius: 50% !important;
+        }
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+          color: #fff !important;
+          font-size: 18px !important;
+        }
+      }
+    </style>
   </head>
   <body class="bg-abu" id="about-full">
     <!-- navbar start -->
@@ -159,7 +218,7 @@
             </div>
           </div>
           <div class="flex container-slide-img">
-            <swiper-container
+            <!-- <swiper-container
               class="swiperdeskripsi"
               id="img-content-project-detail"
               pagination="true"
@@ -170,7 +229,17 @@
               autoplay-delay="2500"
               autoplay-disable-on-interaction="false"
             >
-            </swiper-container>
+            </swiper-container> -->
+            <div class="swiper-custom w-full">
+              <div class="swiper mySwiper">
+                <div
+                  class="swiper-wrapper"
+                  id="img-content-project-detail"
+                ></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -221,7 +290,8 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- vercel -->
     <script type="module" src="js/index.js"></script>
     <!-- <script src="../src/js/index.js"></script> -->
@@ -262,20 +332,22 @@
             );
             if (type == "sewa_kamera") {
               $("#img-content-project-detail").empty();
+              let slide = "";
               imageNames.forEach((imageName) => {
-                const slide = `<swiper-slide class="container-image-app-detail-project">
+                slide += `<div class="swiper-slide container-image-app-detail-project">
                 <img src="${folderPath}/${imageName}" class="w-full image-app-detail-project" alt="" />
-              </swiper-slide>`;
-                $("#img-content-project-detail").append(slide);
+              </div>`;
               });
+              $("#img-content-project-detail").append(slide);
             } else {
               $("#img-content-project-detail").empty();
+              let slide = "";
               imageNames.forEach((imageName) => {
-                const slide = `<swiper-slide>
+                slide += `<div class="swiper-slide ">
                 <img src="${folderPath}/${imageName}" class="w-full" alt="" />
-              </swiper-slide>`;
-                $("#img-content-project-detail").append(slide);
+              </div>`;
               });
+              $("#img-content-project-detail").append(slide);
             }
           } else {
             console.error("Tidak ada data proyek ditemukan!");
@@ -284,6 +356,15 @@
           console.error("Tidak ada data proyek ditemukan!");
         }
       };
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
   </body>
 </html>
