@@ -1795,6 +1795,10 @@ html {
   margin-top: 1.25rem;
 }
 
+.mt-40 {
+  margin-top: 10rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -2318,6 +2322,14 @@ html {
 
 .pt-40 {
   padding-top: 10rem;
+}
+
+.pt-48 {
+  padding-top: 12rem;
+}
+
+.pt-56 {
+  padding-top: 14rem;
 }
 
 .text-left {
