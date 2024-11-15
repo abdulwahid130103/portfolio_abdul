@@ -12,7 +12,7 @@
         padding: 0;
         height: 100%;
         font-family: "Arial", sans-serif;
-        overflow: hidden;
+        overflow: auto;
       }
       .section {
         height: 100vh;
@@ -444,11 +444,8 @@
         let isScrolling = false;
 
         window.addEventListener("wheel", (e) => {
-          e.preventDefault();
-
           if (!isScrolling) {
             isScrolling = true;
-
             const delta = e.deltaY;
 
             if (delta > 0 && currentSection < sections.length - 1) {
@@ -461,7 +458,7 @@
 
             setTimeout(() => {
               isScrolling = false;
-            }, 400); // Adjust the delay (in milliseconds) as needed
+            }, 400);
           }
         });
 
