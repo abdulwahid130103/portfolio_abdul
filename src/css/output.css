@@ -872,36 +872,6 @@ html {
   border-radius: 10px;
 }
 
-.image-limited-height {
-  height: 465px !important;
-  -o-object-fit: cover !important;
-     object-fit: cover !important;
-}
-
-.image-limited-width {
-  max-width: 350px;
-  width: 350px;
-}
-
-/* about full css start */
-
-/* #about-full > header {
-    position: fixed !important;
-    z-index: 9999 !important;
-    background-color: transparent !important;
-    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1) !important;
-  }
-  #about-full > header::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    position: absolute !important;
-    background-color: #e6e6e6;
-    opacity: 0.7 !important;
-    backdrop-filter: blur(5px) !important;
-  } */
-
 .containts-about-image-full {
   height: 100vh !important;
   max-height: 100vh !important;
@@ -917,6 +887,71 @@ html {
   -o-object-fit: cover !important;
      object-fit: cover !important;
 }
+
+/* index css start */
+
+#contact,
+  #about,
+  #project {
+  padding: 0 !important;
+  padding-top: 10rem !important;
+}
+
+#contact {
+  margin: 0 !important;
+  margin-top: 18rem !important;
+  padding: 8rem 0 !important;
+}
+
+#about > .container > div > div > .containts-about-image,
+  #project > .container > div > div > .containts-project-image,
+  #contact > .container > div > div > .containts-contact-image {
+  width: 100% !important;
+  height: 400px !important;
+  padding: 0 !important;
+  padding: 0 2rem !important;
+  top: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+#about > .container > div > div > .containts-about-image > figure,
+  #project > .container > div > div > .containts-project-image > figure,
+  #contact > .container > div > div > .containts-contact-image > figure,
+  #about > .container > div > div > .containts-about-image > figure > a,
+  #project > .container > div > div > .containts-project-image > figure > a,
+  #contact > .container > div > div > .containts-contact-image > figure > a {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative !important;
+}
+
+#about > .container > div > div > .containts-about-image > figure > a > img,
+  #project
+    > .container
+    > div
+    > div
+    > .containts-project-image
+    > figure
+    > a
+    > img,
+  #contact
+    > .container
+    > div
+    > div
+    > .containts-contact-image
+    > figure
+    > a
+    > img {
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  transform: none !important;
+}
+
+/* index css end */
 
 #about-full > section {
   box-sizing: border-box !;
@@ -3134,6 +3169,19 @@ html {
 
   /* about and project start */
 
+  #contact,
+  #about,
+  #project {
+    padding: 0 !important;
+    padding-top: 4rem !important;
+  }
+
+  #about,
+  #project {
+    padding: 0 !important;
+    padding-top: 8rem !important;
+  }
+
   #about > .container > div > div,
   #project > .container > div > div,
   #contact > .container > div > div {
@@ -3147,21 +3195,49 @@ html {
   #project > .container > div > div > .containts-project-image,
   #contact > .container > div > div > .containts-contact-image {
     width: 100% !important;
+    height: 400px !important;
     position: absolute !important;
+    padding: 0 !important;
+    padding: 0 2rem !important;
     top: 0 !important;
     display: flex !important;
     justify-content: center !important;
   }
 
-  .image-limited-height {
-    height: 440px !important;
-    -o-object-fit: cover !important;
-       object-fit: cover !important;
+  #about > .container > div > div > .containts-about-image > figure,
+  #project > .container > div > div > .containts-project-image > figure,
+  #contact > .container > div > div > .containts-contact-image > figure,
+  #about > .container > div > div > .containts-about-image > figure > a,
+  #project > .container > div > div > .containts-project-image > figure > a,
+  #contact > .container > div > div > .containts-contact-image > figure > a {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative !important;
   }
 
-  .image-limited-width {
+  #about > .container > div > div > .containts-about-image > figure > a > img,
+  #project
+    > .container
+    > div
+    > div
+    > .containts-project-image
+    > figure
+    > a
+    > img,
+  #contact
+    > .container
+    > div
+    > div
+    > .containts-contact-image
+    > figure
+    > a
+    > img {
     width: 100% !important;
-    max-width: 300px !important;
+    height: 100% !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
+    transform: none !important;
   }
 
   #about > .container > div > div > .containts-about-text > div > h1,
@@ -3202,6 +3278,9 @@ html {
   #project > .container > div > div > .containts-project-text,
   #contact > .container > div > div > .containts-contact-text {
     width: 100% !important;
+    padding: 0 2rem !important;
+    z-index: 2;
+    transform: translateY(-3rem) !important;
   }
 
   /* about and project end */
