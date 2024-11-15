@@ -891,7 +891,7 @@ html {
 /* index css start */
 
 #contact,
-  #about,
+  #abouts,
   #project {
   padding: 0 !important;
   padding-top: 10rem !important;
@@ -903,7 +903,7 @@ html {
   padding: 8rem 0 !important;
 }
 
-#about > .container > div > div > .containts-about-image,
+#abouts > .container > div > div > .containts-about-image,
   #project > .container > div > div > .containts-project-image,
   #contact > .container > div > div > .containts-contact-image {
   width: 100% !important;
@@ -915,10 +915,10 @@ html {
   justify-content: center !important;
 }
 
-#about > .container > div > div > .containts-about-image > figure,
+#abouts > .container > div > div > .containts-about-image > figure,
   #project > .container > div > div > .containts-project-image > figure,
   #contact > .container > div > div > .containts-contact-image > figure,
-  #about > .container > div > div > .containts-about-image > figure > a,
+  #abouts > .container > div > div > .containts-about-image > figure > a,
   #project > .container > div > div > .containts-project-image > figure > a,
   #contact > .container > div > div > .containts-contact-image > figure > a {
   width: 100% !important;
@@ -927,7 +927,7 @@ html {
   position: relative !important;
 }
 
-#about > .container > div > div > .containts-about-image > figure > a > img,
+#abouts > .container > div > div > .containts-about-image > figure > a > img,
   #project
     > .container
     > div
@@ -954,7 +954,7 @@ html {
 /* index css end */
 
 #about-full > section {
-  box-sizing: border-box !;
+  box-sizing: border-box !important;
   width: 100% !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -3170,19 +3170,19 @@ html {
   /* about and project start */
 
   #contact,
-  #about,
+  #abouts,
   #project {
     padding: 0 !important;
     padding-top: 4rem !important;
   }
 
-  #about,
+  #abouts,
   #project {
     padding: 0 !important;
     padding-top: 8rem !important;
   }
 
-  #about > .container > div > div,
+  #abouts > .container > div > div,
   #project > .container > div > div,
   #contact > .container > div > div {
     height: 35rem !important;
@@ -3191,7 +3191,7 @@ html {
     justify-content: end !important;
   }
 
-  #about > .container > div > div > .containts-about-image,
+  #abouts > .container > div > div > .containts-about-image,
   #project > .container > div > div > .containts-project-image,
   #contact > .container > div > div > .containts-contact-image {
     width: 100% !important;
@@ -3204,10 +3204,10 @@ html {
     justify-content: center !important;
   }
 
-  #about > .container > div > div > .containts-about-image > figure,
+  #abouts > .container > div > div > .containts-about-image > figure,
   #project > .container > div > div > .containts-project-image > figure,
   #contact > .container > div > div > .containts-contact-image > figure,
-  #about > .container > div > div > .containts-about-image > figure > a,
+  #abouts > .container > div > div > .containts-about-image > figure > a,
   #project > .container > div > div > .containts-project-image > figure > a,
   #contact > .container > div > div > .containts-contact-image > figure > a {
     width: 100% !important;
@@ -3216,7 +3216,7 @@ html {
     position: relative !important;
   }
 
-  #about > .container > div > div > .containts-about-image > figure > a > img,
+  #abouts > .container > div > div > .containts-about-image > figure > a > img,
   #project
     > .container
     > div
@@ -3240,7 +3240,7 @@ html {
     transform: none !important;
   }
 
-  #about > .container > div > div > .containts-about-text > div > h1,
+  #abouts > .container > div > div > .containts-about-text > div > h1,
   #project > .container > div > div > .containts-project-text > div > h1,
   #contact > .container > div > div > .containts-contact-text > div > h1 {
     font-size: 30px !important;
@@ -3255,7 +3255,7 @@ html {
     -webkit-backdrop-filter: blur(10px) !important;
   }
 
-  #about > .container > div > div > .containts-about-text > a,
+  #abouts > .container > div > div > .containts-about-text > a,
   #project > .container > div > div > .containts-project-text > a,
   #contact > .container > div > div > .containts-contact-text > a {
     width: 28% !important;
@@ -3265,7 +3265,7 @@ html {
     margin: 0 !important;
   }
 
-  #about > .container > div > div > .containts-about-text > p,
+  #abouts > .container > div > div > .containts-about-text > p,
   #project > .container > div > div > .containts-project-text > p,
   #contact > .container > div > div > .containts-contact-text > p {
     font-size: 14px !important;
@@ -3274,7 +3274,7 @@ html {
     margin-bottom: 0.5rem !important;
   }
 
-  #about > .container > div > div > .containts-about-text,
+  #abouts > .container > div > div > .containts-about-text,
   #project > .container > div > div > .containts-project-text,
   #contact > .container > div > div > .containts-contact-text {
     width: 100% !important;
