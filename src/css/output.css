@@ -3359,6 +3359,10 @@ html {
     margin-right: 0 !important;
   }
 
+  #about {
+    margin: 0 !important;
+  }
+
   #about > div > div > div > .containts-about-image-full {
     width: 100% !important;
   }
