@@ -3359,10 +3359,6 @@ html {
     margin-right: 0 !important;
   }
 
-  #about {
-    margin: 0 !important;
-  }
-
   #about > div > div > div > .containts-about-image-full {
     width: 100% !important;
   }
@@ -3972,6 +3968,17 @@ html {
   /* archive end */
 
   /* responsive detail project end */
+
+  #about,
+  #project-me,
+  #otherprojects,
+  #getintouch,
+  #whos,
+  header,
+  footer {
+    margin: 0 !important;
+    border: 2px solid red !important;
+  }
 }
 
 .hover\:cursor-pointer:hover {
