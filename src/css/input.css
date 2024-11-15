@@ -2012,8 +2012,8 @@
     font-size: 16px !important;
   }
   .image-app-detail-project {
-    width: 600px !important;
-    height: 600px !important;
+    width: 500px !important;
+    height: 500px !important;
     object-fit: contain !important;
   }
 
