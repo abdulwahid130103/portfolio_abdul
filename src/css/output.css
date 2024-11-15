@@ -3862,8 +3862,8 @@ html {
   }
 
   .image-app-detail-project {
-    width: 600px !important;
-    height: 600px !important;
+    width: 500px !important;
+    height: 500px !important;
     -o-object-fit: contain !important;
        object-fit: contain !important;
   }
