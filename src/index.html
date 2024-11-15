@@ -12,7 +12,7 @@
         padding: 0;
         height: 100%;
         font-family: "Arial", sans-serif;
-        overflow: auto;
+        overflow: hidden;
       }
       .section {
         height: 100vh;
@@ -443,6 +443,12 @@
         let currentSection = 0;
         let isScrolling = false;
 
+        // Fungsi scroll manual
+        function scrollToSection(index) {
+          sections[index].scrollIntoView({ behavior: "smooth" });
+        }
+
+        // Event listener untuk mouse wheel (scroll laptop/desktop)
         window.addEventListener("wheel", (e) => {
           if (!isScrolling) {
             isScrolling = true;
@@ -458,13 +464,40 @@
 
             setTimeout(() => {
               isScrolling = false;
+            }, 400); // Delay untuk menghindari scroll cepat
+          }
+        });
+        let touchStartY = 0;
+        let touchEndY = 0;
+
+        window.addEventListener("touchstart", (e) => {
+          touchStartY = e.touches[0].clientY;
+        });
+
+        window.addEventListener("touchmove", (e) => {
+          touchEndY = e.touches[0].clientY;
+        });
+
+        window.addEventListener("touchend", () => {
+          if (!isScrolling) {
+            isScrolling = true;
+
+            if (
+              touchStartY > touchEndY &&
+              currentSection < sections.length - 1
+            ) {
+              currentSection++;
+            } else if (touchStartY < touchEndY && currentSection > 0) {
+              currentSection--;
+            }
+
+            scrollToSection(currentSection);
+
+            setTimeout(() => {
+              isScrolling = false;
             }, 400);
           }
         });
-
-        function scrollToSection(index) {
-          sections[index].scrollIntoView({ behavior: "smooth" });
-        }
       });
     </script>
   </body>
