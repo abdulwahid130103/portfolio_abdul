@@ -1795,10 +1795,6 @@ html {
   margin-top: 1.25rem;
 }
 
-.mt-40 {
-  margin-top: 10rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -2312,8 +2308,8 @@ html {
   padding-top: 0.5rem;
 }
 
-.pt-36 {
-  padding-top: 9rem;
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .pt-4 {
@@ -2322,22 +2318,6 @@ html {
 
 .pt-40 {
   padding-top: 10rem;
-}
-
-.pt-48 {
-  padding-top: 12rem;
-}
-
-.pt-56 {
-  padding-top: 14rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
 }
 
 .text-left {
@@ -3174,12 +3154,13 @@ html {
   }
 
   .image-limited-height {
-    height: 465px !important;
+    height: 440px !important;
     -o-object-fit: cover !important;
        object-fit: cover !important;
   }
 
   .image-limited-width {
+    width: 100% !important;
     max-width: 300px !important;
   }
 
@@ -3214,7 +3195,7 @@ html {
     font-size: 14px !important;
     z-index: 1 !important;
     margin: 0 !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.5rem !important;
   }
 
   #about > .container > div > div > .containts-about-text,
@@ -3263,7 +3244,7 @@ html {
     > li
     > a
     > iconify-icon {
-    font-size: 26px !important;
+    font-size: 20px !important;
   }
 
   #contact > .container > div > div > .containts-contact-text > h4 {

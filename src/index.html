@@ -19,6 +19,20 @@
         width: 100%;
         scroll-snap-type: y mandatory;
       }
+      #contact,
+      #about,
+      #project {
+        margin: 0 !important;
+        margin-top: 10rem !important;
+      }
+      @media (max-width: 768px) {
+        #contact,
+        #about,
+        #project {
+          padding: 0 !important;
+          padding-top: 4rem !important;
+        }
+      }
     </style>
   </head>
   <body class="bg-abu" id="parent-index">
@@ -227,7 +241,7 @@
     <!-- hero section end -->
 
     <!-- About section start -->
-    <section id="about" class="mt-20 pt-16">
+    <section id="about" class="pt-24">
       <div class="container">
         <div class="w-full flex py-5">
           <div class="w-full relative lg:grid lg:grid-cols-3 gap-4">
@@ -276,7 +290,7 @@
     <!-- About section end -->
 
     <!-- Project section start -->
-    <section id="project" class="mt-20 pt-16">
+    <section id="project" class="pt-24">
       <div class="container">
         <div class="w-full flex py-5">
           <div class="w-full relative lg:grid lg:grid-cols-3 gap-4">
@@ -326,7 +340,7 @@
     <!-- Project section end -->
 
     <!-- Contact section start -->
-    <section id="contact" class="mt-20 pt-16">
+    <section id="contact" class="pt-24">
       <div class="container">
         <div class="w-full flex py-5">
           <div class="w-full relative lg:grid lg:grid-cols-3 gap-4">

@@ -1404,10 +1404,11 @@
     justify-content: center !important;
   }
   .image-limited-height {
-    height: 465px !important;
+    height: 440px !important;
     object-fit: cover !important;
   }
   .image-limited-width {
+    width: 100% !important;
     max-width: 300px !important;
   }
 
@@ -1442,7 +1443,7 @@
     z-index: 1 !important;
     margin: 0 0 !important;
     margin: 0 !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.5rem !important;
   }
   #about > .container > div > div > .containts-about-text,
   #project > .container > div > div > .containts-project-text,
@@ -1484,7 +1485,7 @@
     > li
     > a
     > iconify-icon {
-    font-size: 26px !important;
+    font-size: 20px !important;
   }
   #contact > .container > div > div > .containts-contact-text > h4 {
     margin: 0 !important;
