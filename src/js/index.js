@@ -5,41 +5,6 @@ function toggleNavbar() {
   $(".container-hamburger").toggleClass("relative");
 }
 
-function scrollWindow() {
-  //   navbar fixed
-  const header = document.querySelector("header");
-  let sections = document.querySelectorAll("section");
-  let navLinks = document.querySelectorAll(
-    ".container-sidebar .container-sidebar-sub li a"
-  );
-  window.onscroll = function () {
-    const fixedNav = header.offsetTop;
-
-    if (window.pageYOffset > fixedNav) {
-      header.classList.add("nav-fixed");
-    } else {
-      header.classList.remove("nav-fixed");
-    }
-    sections.forEach((sec) => {
-      let top = window.scrollY;
-      let offset = sec.offsetTop - 150;
-      let height = sec.offsetHeight;
-      let id = sec.getAttribute("id");
-
-      if (top >= offset && top < offset + height) {
-        navLinks.forEach((links) => {
-          links.classList.remove("menu-active");
-          document
-            .querySelector(
-              ".container-sidebar .container-sidebar-sub li a[href*=" + id + "]"
-            )
-            .classList.add("menu-active");
-        });
-      }
-    });
-  };
-}
-
 function zoomInImagePopupIcon() {
   const icon = document.querySelector(".focus-icon-image-popup");
   const imagePopup = document.querySelector(".img-popup");
@@ -106,7 +71,6 @@ $(document).ready(function () {
   $(".nav-link").click(function () {
     toggleNavbar();
   });
-  scrollWindow();
   zoomInImagePopup();
   zoomInImagePopupIcon();
   hoverProject();

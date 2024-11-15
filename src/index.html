@@ -108,7 +108,7 @@
                 <li>
                   <a
                     href="#hero"
-                    class="block py-2 px-2 text-white menu-active transition-all duration-300"
+                    class="block py-2 px-2 text-white sidebar-link menu-active transition-all duration-300"
                     ><iconify-icon
                       icon="ic:round-home"
                       style="font-size: 26px"
@@ -118,7 +118,7 @@
                 <li>
                   <a
                     href="#about"
-                    class="block py-2 px-2 text-white transition-all duration-300"
+                    class="block py-2 px-2 text-white sidebar-link transition-all duration-300"
                     ><iconify-icon
                       icon="mdi:about"
                       style="font-size: 26px"
@@ -128,7 +128,7 @@
                 <li>
                   <a
                     href="#project"
-                    class="block py-2 px-2 text-white transition-all duration-300"
+                    class="block py-2 px-2 text-white sidebar-link transition-all duration-300"
                     ><iconify-icon
                       icon="material-symbols:folder-open"
                       style="font-size: 26px"
@@ -138,7 +138,7 @@
                 <li>
                   <a
                     href="#contact"
-                    class="block py-2 px-2 text-white transition-all duration-300"
+                    class="block py-2 px-2 text-white sidebar-link transition-all duration-300"
                     ><iconify-icon
                       icon="pepicons-pop:letter"
                       style="font-size: 26px"
@@ -435,12 +435,25 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const sections = document.querySelectorAll("section");
+        const sidebarLinks = document.querySelectorAll(".sidebar-link");
         let currentSection = 0;
         let isScrolling = false;
 
-        // Fungsi scroll manual
+        // Fungsi untuk scroll ke section yang dituju
         function scrollToSection(index) {
           sections[index].scrollIntoView({ behavior: "smooth" });
+          updateActiveLink(index);
+        }
+
+        // Fungsi untuk memperbarui link aktif pada sidebar
+        function updateActiveLink(index) {
+          sidebarLinks.forEach((link, i) => {
+            if (i === index) {
+              link.classList.add("menu-active");
+            } else {
+              link.classList.remove("menu-active");
+            }
+          });
         }
 
         // Event listener untuk mouse wheel (scroll laptop/desktop)
@@ -449,6 +462,7 @@
             isScrolling = true;
             const delta = e.deltaY;
 
+            // Navigasi berdasarkan arah scroll
             if (delta > 0 && currentSection < sections.length - 1) {
               currentSection++;
             } else if (delta < 0 && currentSection > 0) {
@@ -457,11 +471,14 @@
 
             scrollToSection(currentSection);
 
+            // Mengatur delay untuk menghindari scroll cepat
             setTimeout(() => {
               isScrolling = false;
-            }, 400); // Delay untuk menghindari scroll cepat
+            }, 400);
           }
         });
+
+        // Variabel untuk touch scroll (mobile)
         let touchStartY = 0;
         let touchEndY = 0;
 
@@ -477,6 +494,7 @@
           if (!isScrolling) {
             isScrolling = true;
 
+            // Navigasi berdasarkan arah swipe
             if (
               touchStartY > touchEndY &&
               currentSection < sections.length - 1
@@ -488,11 +506,15 @@
 
             scrollToSection(currentSection);
 
+            // Mengatur delay untuk menghindari scroll cepat
             setTimeout(() => {
               isScrolling = false;
             }, 400);
           }
         });
+
+        // Memperbarui link aktif saat halaman pertama kali dimuat
+        updateActiveLink(currentSection);
       });
     </script>
   </body>
