@@ -2120,6 +2120,8 @@
   header,
   footer {
     margin: 0 !important;
-    border: 2px solid red !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
   }
 }
