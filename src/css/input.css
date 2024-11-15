@@ -2116,9 +2116,7 @@
   #project-me,
   #otherprojects,
   #getintouch,
-  #whos,
-  header,
-  footer {
+  #whos {
     margin: 0 !important;
     width: 100% !important;
     overflow: hidden !important;

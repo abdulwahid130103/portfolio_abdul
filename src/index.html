@@ -439,13 +439,12 @@
         let currentSection = 0;
         let isScrolling = false;
 
-        // Fungsi untuk scroll ke section yang dituju
+        // Fungsi scroll manual
         function scrollToSection(index) {
           sections[index].scrollIntoView({ behavior: "smooth" });
           updateActiveLink(index);
         }
 
-        // Fungsi untuk memperbarui link aktif pada sidebar
         function updateActiveLink(index) {
           sidebarLinks.forEach((link, i) => {
             if (i === index) {
@@ -462,7 +461,6 @@
             isScrolling = true;
             const delta = e.deltaY;
 
-            // Navigasi berdasarkan arah scroll
             if (delta > 0 && currentSection < sections.length - 1) {
               currentSection++;
             } else if (delta < 0 && currentSection > 0) {
@@ -471,14 +469,11 @@
 
             scrollToSection(currentSection);
 
-            // Mengatur delay untuk menghindari scroll cepat
             setTimeout(() => {
               isScrolling = false;
-            }, 400);
+            }, 400); // Delay untuk menghindari scroll cepat
           }
         });
-
-        // Variabel untuk touch scroll (mobile)
         let touchStartY = 0;
         let touchEndY = 0;
 
@@ -494,7 +489,6 @@
           if (!isScrolling) {
             isScrolling = true;
 
-            // Navigasi berdasarkan arah swipe
             if (
               touchStartY > touchEndY &&
               currentSection < sections.length - 1
@@ -506,15 +500,11 @@
 
             scrollToSection(currentSection);
 
-            // Mengatur delay untuk menghindari scroll cepat
             setTimeout(() => {
               isScrolling = false;
             }, 400);
           }
         });
-
-        // Memperbarui link aktif saat halaman pertama kali dimuat
-        updateActiveLink(currentSection);
       });
     </script>
   </body>
