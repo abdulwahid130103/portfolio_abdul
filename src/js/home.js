@@ -1,328 +1,328 @@
 let beforeIndex = 100;
-function transitionHeroIndexPhone(index) {
-  const sections = document.querySelectorAll("section");
-  const idSection = sections[index].id;
+// function transitionHeroIndexPhone(index) {
+//   const sections = document.querySelectorAll("section");
+//   const idSection = sections[index].id;
 
-  let mm = gsap.matchMedia();
-  if (index != beforeIndex) {
-    // setTimeout(function () {
+//   let mm = gsap.matchMedia();
+//   if (index != beforeIndex) {
+//     // setTimeout(function () {
 
-    mm.add("(min-width: 992px)", () => {
-      gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: `#${idSection}`,
-            start: "top 100%",
-            markers: true,
-            toggleActions: "play none none reverse",
-          },
-        })
-        .fromTo(
-          ".container-image-me",
-          {
-            duration: 1,
-            opacity: 0,
-            ease: "power1.inOut",
-            x: 100,
-          },
-          {
-            duration: 1,
-            opacity: 0.2,
-            ease: "power1.inOut",
-            x: -20,
-          }
-        )
-        .to(".container-image-me", {
-          duration: 1,
-          opacity: 1,
-          ease: "power1.inOut",
-          x: 0,
-          clearProps: "transform",
-        });
+//     mm.add("(min-width: 992px)", () => {
+//       gsap
+//         .timeline({
+//           scrollTrigger: {
+//             trigger: `#${idSection}`,
+//             start: "top 100%",
+//             markers: true,
+//             toggleActions: "play none none reverse",
+//           },
+//         })
+//         .fromTo(
+//           ".container-image-me",
+//           {
+//             duration: 1,
+//             opacity: 0,
+//             ease: "power1.inOut",
+//             x: 100,
+//           },
+//           {
+//             duration: 1,
+//             opacity: 0.2,
+//             ease: "power1.inOut",
+//             x: -20,
+//           }
+//         )
+//         .to(".container-image-me", {
+//           duration: 1,
+//           opacity: 1,
+//           ease: "power1.inOut",
+//           x: 0,
+//           clearProps: "transform",
+//         });
 
-      gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: `#${idSection}`,
-            start: "top 10%",
-            markers: true,
-            toggleActions: "play none none reverse",
-          },
-        })
-        .fromTo(
-          ".text-name",
-          {
-            duration: 1,
-            opacity: 0,
-            ease: "power1.inOut",
-            x: -100,
-          },
-          {
-            duration: 1,
-            opacity: 0.5,
-            ease: "power1.inOut",
-            x: 20,
-          }
-        )
-        .to(".text-name", {
-          duration: 1,
-          opacity: 1,
-          ease: "power1.inOut",
-          x: 0,
-        });
+//       gsap
+//         .timeline({
+//           scrollTrigger: {
+//             trigger: `#${idSection}`,
+//             start: "top 10%",
+//             markers: true,
+//             toggleActions: "play none none reverse",
+//           },
+//         })
+//         .fromTo(
+//           ".text-name",
+//           {
+//             duration: 1,
+//             opacity: 0,
+//             ease: "power1.inOut",
+//             x: -100,
+//           },
+//           {
+//             duration: 1,
+//             opacity: 0.5,
+//             ease: "power1.inOut",
+//             x: 20,
+//           }
+//         )
+//         .to(".text-name", {
+//           duration: 1,
+//           opacity: 1,
+//           ease: "power1.inOut",
+//           x: 0,
+//         });
 
-      gsap
-        .timeline({
-          delay: 0.2,
-          scrollTrigger: {
-            trigger: `#${idSection}`,
-            start: "top 10%",
-            markers: true,
-            toggleActions: "play none none reverse",
-          },
-        })
-        .fromTo(
-          ".text-posisi",
-          {
-            duration: 1,
-            opacity: 0,
-            ease: "power1.inOut",
-            x: -100,
-          },
-          {
-            duration: 1,
-            opacity: 0.5,
-            ease: "power1.inOut",
-            x: 20,
-          }
-        )
-        .to(".text-posisi", {
-          duration: 1,
-          opacity: 1,
-          ease: "power1.inOut",
-          x: 0,
-        });
+//       gsap
+//         .timeline({
+//           delay: 0.2,
+//           scrollTrigger: {
+//             trigger: `#${idSection}`,
+//             start: "top 10%",
+//             markers: true,
+//             toggleActions: "play none none reverse",
+//           },
+//         })
+//         .fromTo(
+//           ".text-posisi",
+//           {
+//             duration: 1,
+//             opacity: 0,
+//             ease: "power1.inOut",
+//             x: -100,
+//           },
+//           {
+//             duration: 1,
+//             opacity: 0.5,
+//             ease: "power1.inOut",
+//             x: 20,
+//           }
+//         )
+//         .to(".text-posisi", {
+//           duration: 1,
+//           opacity: 1,
+//           ease: "power1.inOut",
+//           x: 0,
+//         });
 
-      gsap
-        .timeline({
-          delay: 0.4,
-          scrollTrigger: {
-            trigger: `#${idSection}`,
-            start: "top 10%",
-            markers: true,
-            toggleActions: "play none none reverse",
-          },
-        })
-        .fromTo(
-          ".text-tentang",
-          {
-            duration: 1,
-            opacity: 0,
-            ease: "power1.inOut",
-            x: -100,
-          },
-          {
-            duration: 1,
-            opacity: 0.5,
-            ease: "power1.inOut",
-            x: 20,
-          }
-        )
-        .to(".text-tentang", {
-          duration: 1,
-          opacity: 1,
-          ease: "power1.inOut",
-          x: 0,
-        });
+//       gsap
+//         .timeline({
+//           delay: 0.4,
+//           scrollTrigger: {
+//             trigger: `#${idSection}`,
+//             start: "top 10%",
+//             markers: true,
+//             toggleActions: "play none none reverse",
+//           },
+//         })
+//         .fromTo(
+//           ".text-tentang",
+//           {
+//             duration: 1,
+//             opacity: 0,
+//             ease: "power1.inOut",
+//             x: -100,
+//           },
+//           {
+//             duration: 1,
+//             opacity: 0.5,
+//             ease: "power1.inOut",
+//             x: 20,
+//           }
+//         )
+//         .to(".text-tentang", {
+//           duration: 1,
+//           opacity: 1,
+//           ease: "power1.inOut",
+//           x: 0,
+//         });
 
-      gsap
-        .timeline({
-          delay: 0.6,
-          scrollTrigger: {
-            trigger: `#${idSection}`,
-            start: "top 10%",
-            markers: true,
-            toggleActions: "play none none reverse",
-          },
-        })
-        .fromTo(
-          ".containts-button-hero",
-          {
-            duration: 1,
-            opacity: 0,
-            ease: "power1.inOut",
-            x: -100,
-          },
-          {
-            duration: 1,
-            opacity: 0.5,
-            ease: "power1.inOut",
-            x: 20,
-          }
-        )
-        .to(".containts-button-hero", {
-          duration: 1,
-          opacity: 1,
-          ease: "power1.inOut",
-          x: 0,
-        });
+//       gsap
+//         .timeline({
+//           delay: 0.6,
+//           scrollTrigger: {
+//             trigger: `#${idSection}`,
+//             start: "top 10%",
+//             markers: true,
+//             toggleActions: "play none none reverse",
+//           },
+//         })
+//         .fromTo(
+//           ".containts-button-hero",
+//           {
+//             duration: 1,
+//             opacity: 0,
+//             ease: "power1.inOut",
+//             x: -100,
+//           },
+//           {
+//             duration: 1,
+//             opacity: 0.5,
+//             ease: "power1.inOut",
+//             x: 20,
+//           }
+//         )
+//         .to(".containts-button-hero", {
+//           duration: 1,
+//           opacity: 1,
+//           ease: "power1.inOut",
+//           x: 0,
+//         });
 
-      // abouts
-      gsap
-        .timeline({
-          delay: 0.6,
-          scrollTrigger: {
-            trigger: `#${idSection}`,
-            start: "top 10%",
-            markers: true,
-            toggleActions: "play none none reverse",
-          },
-        })
-        .fromTo(
-          ".containts-about-image",
-          {
-            duration: 1,
-            opacity: 0,
-            ease: "power1.inOut",
-            x: -100,
-          },
-          {
-            duration: 1,
-            opacity: 0.5,
-            ease: "power1.inOut",
-            x: 20,
-          }
-        )
-        .to(".containts-about-image", {
-          duration: 1,
-          opacity: 1,
-          ease: "power1.inOut",
-          x: 0,
-        });
-    });
-    mm.add("(max-width: 768px)", () => {
-      gsap
-        .timeline()
-        .fromTo(
-          ".container-image-me",
-          {
-            duration: 1,
-            opacity: 0,
-            ease: "power1.inOut",
-            x: -100,
-          },
-          {
-            duration: 1,
-            opacity: 1,
-            ease: "power1.inOut",
-            x: 20,
-          }
-        )
-        .to(".container-image-me", {
-          duration: 1,
-          opacity: 1,
-          ease: "power1.inOut",
-          x: 0,
-          clearProps: "transform",
-        });
+//       // abouts
+//       gsap
+//         .timeline({
+//           delay: 0.6,
+//           scrollTrigger: {
+//             trigger: `#${idSection}`,
+//             start: "top 10%",
+//             markers: true,
+//             toggleActions: "play none none reverse",
+//           },
+//         })
+//         .fromTo(
+//           ".containts-about-image",
+//           {
+//             duration: 1,
+//             opacity: 0,
+//             ease: "power1.inOut",
+//             x: -100,
+//           },
+//           {
+//             duration: 1,
+//             opacity: 0.5,
+//             ease: "power1.inOut",
+//             x: 20,
+//           }
+//         )
+//         .to(".containts-about-image", {
+//           duration: 1,
+//           opacity: 1,
+//           ease: "power1.inOut",
+//           x: 0,
+//         });
+//     });
+//     mm.add("(max-width: 768px)", () => {
+//       gsap
+//         .timeline()
+//         .fromTo(
+//           ".container-image-me",
+//           {
+//             duration: 1,
+//             opacity: 0,
+//             ease: "power1.inOut",
+//             x: -100,
+//           },
+//           {
+//             duration: 1,
+//             opacity: 1,
+//             ease: "power1.inOut",
+//             x: 20,
+//           }
+//         )
+//         .to(".container-image-me", {
+//           duration: 1,
+//           opacity: 1,
+//           ease: "power1.inOut",
+//           x: 0,
+//           clearProps: "transform",
+//         });
 
-      gsap
-        .timeline()
-        .fromTo(
-          ".text-name",
-          {
-            duration: 1,
-            opacity: 0,
-            ease: "power1.inOut",
-            x: -100,
-          },
-          {
-            duration: 1,
-            opacity: 1,
-            ease: "power1.inOut",
-            x: 20,
-          }
-        )
-        .to(".text-name", {
-          duration: 1,
-          opacity: 1,
-          ease: "power1.inOut",
-          x: 0,
-        });
-      gsap
-        .timeline({ delay: 0.2 })
-        .fromTo(
-          ".text-posisi",
-          {
-            duration: 1,
-            opacity: 0,
-            ease: "power1.inOut",
-            x: -100,
-          },
-          {
-            duration: 1,
-            opacity: 1,
-            ease: "power1.inOut",
-            x: 20,
-          }
-        )
-        .to(".text-posisi", {
-          duration: 1,
-          opacity: 1,
-          ease: "power1.inOut",
-          x: 0,
-        });
-      gsap
-        .timeline({ delay: 0.4 })
-        .fromTo(
-          ".text-tentang",
-          {
-            duration: 1,
-            opacity: 0,
-            ease: "power1.inOut",
-            x: -100,
-          },
-          {
-            duration: 1,
-            opacity: 1,
-            ease: "power1.inOut",
-            x: 20,
-          }
-        )
-        .to(".text-tentang", {
-          duration: 1,
-          opacity: 1,
-          ease: "power1.inOut",
-          x: 0,
-        });
-      gsap
-        .timeline({ delay: 0.6 })
-        .fromTo(
-          ".containts-button-hero",
-          {
-            duration: 1,
-            opacity: 0,
-            ease: "power1.inOut",
-            x: -100,
-          },
-          {
-            duration: 1,
-            opacity: 1,
-            ease: "power1.inOut",
-            x: 20,
-          }
-        )
-        .to(".containts-button-hero", {
-          duration: 1,
-          opacity: 1,
-          ease: "power1.inOut",
-          x: 0,
-        });
-    });
-  }
+//       gsap
+//         .timeline()
+//         .fromTo(
+//           ".text-name",
+//           {
+//             duration: 1,
+//             opacity: 0,
+//             ease: "power1.inOut",
+//             x: -100,
+//           },
+//           {
+//             duration: 1,
+//             opacity: 1,
+//             ease: "power1.inOut",
+//             x: 20,
+//           }
+//         )
+//         .to(".text-name", {
+//           duration: 1,
+//           opacity: 1,
+//           ease: "power1.inOut",
+//           x: 0,
+//         });
+//       gsap
+//         .timeline({ delay: 0.2 })
+//         .fromTo(
+//           ".text-posisi",
+//           {
+//             duration: 1,
+//             opacity: 0,
+//             ease: "power1.inOut",
+//             x: -100,
+//           },
+//           {
+//             duration: 1,
+//             opacity: 1,
+//             ease: "power1.inOut",
+//             x: 20,
+//           }
+//         )
+//         .to(".text-posisi", {
+//           duration: 1,
+//           opacity: 1,
+//           ease: "power1.inOut",
+//           x: 0,
+//         });
+//       gsap
+//         .timeline({ delay: 0.4 })
+//         .fromTo(
+//           ".text-tentang",
+//           {
+//             duration: 1,
+//             opacity: 0,
+//             ease: "power1.inOut",
+//             x: -100,
+//           },
+//           {
+//             duration: 1,
+//             opacity: 1,
+//             ease: "power1.inOut",
+//             x: 20,
+//           }
+//         )
+//         .to(".text-tentang", {
+//           duration: 1,
+//           opacity: 1,
+//           ease: "power1.inOut",
+//           x: 0,
+//         });
+//       gsap
+//         .timeline({ delay: 0.6 })
+//         .fromTo(
+//           ".containts-button-hero",
+//           {
+//             duration: 1,
+//             opacity: 0,
+//             ease: "power1.inOut",
+//             x: -100,
+//           },
+//           {
+//             duration: 1,
+//             opacity: 1,
+//             ease: "power1.inOut",
+//             x: 20,
+//           }
+//         )
+//         .to(".containts-button-hero", {
+//           duration: 1,
+//           opacity: 1,
+//           ease: "power1.inOut",
+//           x: 0,
+//         });
+//     });
+//   }
 
-  //   mm.revert();
-}
+//   //   mm.revert();
+// }
 
 function scrollInIndex() {
   const sections = document.querySelectorAll("section");
@@ -334,7 +334,7 @@ function scrollInIndex() {
   function scrollToSection(index) {
     sections[index].scrollIntoView({ behavior: "smooth" });
     updateActiveLink(index);
-    transitionHeroIndexPhone(index);
+    // transitionHeroIndexPhone(index);
   }
 
   function updateActiveLink(index) {
@@ -425,5 +425,5 @@ function scrollInIndex() {
 
 $(document).ready(function () {
   scrollInIndex();
-  transitionHeroIndexPhone(0);
+  // transitionHeroIndexPhone(0);
 });
