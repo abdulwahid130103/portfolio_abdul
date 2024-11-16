@@ -37,6 +37,7 @@ function transitionHeroIndexPhone(index) {
           opacity: 1,
           ease: "power1.inOut",
           x: 0,
+          clearProps: "transform",
         });
 
       gsap
@@ -222,6 +223,7 @@ function transitionHeroIndexPhone(index) {
           opacity: 1,
           ease: "power1.inOut",
           x: 0,
+          clearProps: "transform",
         });
 
       gsap
