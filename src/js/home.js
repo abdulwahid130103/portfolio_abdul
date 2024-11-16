@@ -5,12 +5,14 @@ function transitionHeroIndexPhone(index) {
 
   let mm = gsap.matchMedia();
   if (index != beforeIndex) {
+    // setTimeout(function () {
+
     mm.add("(min-width: 992px)", () => {
       gsap
         .timeline({
           scrollTrigger: {
             trigger: `#${idSection}`,
-            start: "top 10%",
+            start: "top 100%",
             markers: true,
             toggleActions: "play none none reverse",
           },
@@ -163,8 +165,40 @@ function transitionHeroIndexPhone(index) {
           ease: "power1.inOut",
           x: 0,
         });
-    });
 
+      // abouts
+      gsap
+        .timeline({
+          delay: 0.6,
+          scrollTrigger: {
+            trigger: `#${idSection}`,
+            start: "top 10%",
+            markers: true,
+            toggleActions: "play none none reverse",
+          },
+        })
+        .fromTo(
+          ".containts-about-image",
+          {
+            duration: 1,
+            opacity: 0,
+            ease: "power1.inOut",
+            x: -100,
+          },
+          {
+            duration: 1,
+            opacity: 0.5,
+            ease: "power1.inOut",
+            x: 20,
+          }
+        )
+        .to(".containts-about-image", {
+          duration: 1,
+          opacity: 1,
+          ease: "power1.inOut",
+          x: 0,
+        });
+    });
     mm.add("(max-width: 768px)", () => {
       gsap
         .timeline()
@@ -336,36 +370,54 @@ function scrollInIndex() {
       }
     }, 100);
   });
+
   let touchStartY = 0;
+  let touchMoved = false;
 
   // Event listener untuk perangkat sentuh
   window.addEventListener("touchstart", (e) => {
     touchStartY = e.touches[0].clientY;
+    touchMoved = false; // Reset flag saat sentuhan dimulai
+  });
+
+  window.addEventListener("touchmove", (e) => {
+    touchMoved = true; // Tandai bahwa ada gerakan geser
   });
 
   window.addEventListener("touchend", (e) => {
     const touchEndY = e.changedTouches[0].clientY;
 
-    debounce(() => {
-      if (!isScrolling) {
-        isScrolling = true;
+    // Hanya jalankan jika ada gerakan (tidak sekadar klik)
+    if (touchMoved) {
+      debounce(() => {
+        if (!isScrolling) {
+          isScrolling = true;
 
-        const previousIndex = currentSection;
-        if (touchStartY > touchEndY && currentSection < sections.length - 1) {
-          currentSection++;
-        } else if (touchStartY < touchEndY && currentSection > 0) {
-          currentSection--;
+          const previousIndex = currentSection;
+          if (touchStartY > touchEndY && currentSection < sections.length - 1) {
+            currentSection++;
+          } else if (touchStartY < touchEndY && currentSection > 0) {
+            currentSection--;
+          }
+
+          if (previousIndex !== currentSection) {
+            scrollToSection(currentSection);
+          }
+
+          setTimeout(() => {
+            isScrolling = false;
+          }, 600);
         }
+      }, 100);
+    }
+  });
 
-        if (previousIndex !== currentSection) {
-          scrollToSection(currentSection);
-        }
-
-        setTimeout(() => {
-          isScrolling = false;
-        }, 600);
-      }
-    }, 100);
+  // Mencegah klik saat ada gerakan sentuhan
+  document.body.addEventListener("click", (e) => {
+    if (touchMoved) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
   });
 }
 
