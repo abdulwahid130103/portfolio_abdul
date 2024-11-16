@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/output.css" rel="stylesheet" />
-    <!-- <script src="../node_modules/flowbite/dist/flowbite.min.css"></script> -->
+
     <style>
       body,
       html {
@@ -20,6 +20,7 @@
         scroll-snap-type: y mandatory;
       }
     </style>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
   </head>
   <body class="bg-abu" id="parent-index">
     <!-- navbar start -->
@@ -161,7 +162,7 @@
                 <span class="block" style="line-height: 1">Developer</span>
               </h1>
               <p
-                class="font-semibold text-gray-500 font-jost_light text-justify mb-5 text-[20px]"
+                class="font-semibold text-tentang text-gray-500 font-jost_light text-justify mb-5 text-[20px]"
               >
                 A junior fullstack developer who currently focused on Web
                 Development. Other than that, I also interested in UX/UI Design
@@ -253,7 +254,14 @@
             <div
               class="containts-about-text lg:col-span-2 lg:pl-[100px] px-5 lg:flex lg:flex-col lg:items-start lg:justify-center"
             >
-              <div class="flex justify-start items-center py-5">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-out"
+                data-aos-once="false"
+                class="flex justify-start items-center py-5"
+              >
                 <h1
                   class="text-dark font-jost_extra_bold text-bold mb-4 text-about"
                 >
@@ -428,84 +436,9 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
     <!-- vercel -->
     <script src="js/index.js"></script>
-    <!-- <script src="../src/js/index.js"></script> -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const sections = document.querySelectorAll("section");
-        const sidebarLinks = document.querySelectorAll(".sidebar-link");
-        let currentSection = 0;
-        let isScrolling = false;
-
-        // Fungsi scroll manual
-        function scrollToSection(index) {
-          sections[index].scrollIntoView({ behavior: "smooth" });
-          updateActiveLink(index);
-        }
-
-        function updateActiveLink(index) {
-          sidebarLinks.forEach((link, i) => {
-            if (i === index) {
-              link.classList.add("menu-active");
-            } else {
-              link.classList.remove("menu-active");
-            }
-          });
-        }
-
-        // Event listener untuk mouse wheel (scroll laptop/desktop)
-        window.addEventListener("wheel", (e) => {
-          if (!isScrolling) {
-            isScrolling = true;
-            const delta = e.deltaY;
-
-            if (delta > 0 && currentSection < sections.length - 1) {
-              currentSection++;
-            } else if (delta < 0 && currentSection > 0) {
-              currentSection--;
-            }
-
-            scrollToSection(currentSection);
-
-            setTimeout(() => {
-              isScrolling = false;
-            }, 400); // Delay untuk menghindari scroll cepat
-          }
-        });
-        let touchStartY = 0;
-        let touchEndY = 0;
-
-        window.addEventListener("touchstart", (e) => {
-          touchStartY = e.touches[0].clientY;
-        });
-
-        window.addEventListener("touchmove", (e) => {
-          touchEndY = e.touches[0].clientY;
-        });
-
-        window.addEventListener("touchend", () => {
-          if (!isScrolling) {
-            isScrolling = true;
-
-            if (
-              touchStartY > touchEndY &&
-              currentSection < sections.length - 1
-            ) {
-              currentSection++;
-            } else if (touchStartY < touchEndY && currentSection > 0) {
-              currentSection--;
-            }
-
-            scrollToSection(currentSection);
-
-            setTimeout(() => {
-              isScrolling = false;
-            }, 400);
-          }
-        });
-      });
-    </script>
+    <script src="js/home.js"></script>
   </body>
 </html>
