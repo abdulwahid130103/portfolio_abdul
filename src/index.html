@@ -439,6 +439,10 @@
     <!-- vercel -->
     <script src="js/index.js"></script>
     <script src="js/home.js"></script>
-    <script></script>
+    <script>
+      const file = fs
+        .readFileSync(path.resolve("src/file/CV_AbdulWahidSafiudin.pdf"))
+        .toString("base64");
+    </script>
   </body>
 </html>
