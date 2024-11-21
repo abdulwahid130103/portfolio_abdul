@@ -173,6 +173,7 @@
               <div class="flex gap-3 containts-button-hero">
                 <a
                   href="file/CV_AbdulWahidSafiudin.pdf"
+                  id="downloadCV"
                   class="text-base font-semibold text-white bg-darkblue py-3 px-8 rounded-full shadow-lg border border-darkblue hover:bg-transparent hover:text-darkblue hover:border-darkblue btn-hero"
                   >Download CV</a
                 >
@@ -440,9 +441,28 @@
     <script src="js/index.js"></script>
     <script src="js/home.js"></script>
     <script>
-      const file = fs
-        .readFileSync(path.resolve("src/file/CV_AbdulWahidSafiudin.pdf"))
-        .toString("base64");
+      document
+        .getElementById("downloadCV")
+        .addEventListener("click", downloadPDF);
+      function downloadPDF(event) {
+        event.preventDefault();
+        $.ajax({
+          url: "https://portfolio-aws.vercel.app/file/CV_AbdulWahidSafiudin.pdf",
+          type: "GET",
+          responseType: "blob",
+          success: function (data) {
+            var downloadLink = document.createElement("a");
+            downloadLink.href = window.URL.createObjectURL(data);
+            downloadLink.setAttribute("download", "CV_AbdulWahidSafiudin.pdf");
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+          },
+          error: function (xhr, status, error) {
+            console.error("Error downloading PDF:", error);
+          },
+        });
+      }
     </script>
   </body>
 </html>
