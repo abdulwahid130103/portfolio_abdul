@@ -439,29 +439,6 @@
     <!-- vercel -->
     <script src="js/index.js"></script>
     <script src="js/home.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const downloadButton = document.querySelector(
-          'a[href="file/CV_AbdulWahidSafiudin.pdf"]'
-        );
-
-        downloadButton.addEventListener("click", function (event) {
-          event.preventDefault(); // Prevent the default link behavior
-
-          // Create a temporary anchor element
-          const link = document.createElement("a");
-          link.href = "file/CV_AbdulWahidSafiudin.pdf";
-          link.download = "CV_AbdulWahidSafiudin.pdf";
-
-          // Append to body, click, and remove
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-
-          // Optional: Add a visual feedback or toast notification
-          console.log("CV Download Started");
-        });
-      });
-    </script>
+    <script></script>
   </body>
 </html>
